@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SIF.Aplicacao.ConfiguracaoInstanciaSQL.UserControlPassos.PassoConfiguracaoArquivoBanco"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:user="clr-namespace:SIF.Aplicacao.ConfiguracaoInstanciaSQL.UserControlPassos"
+             xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+             xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             >
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <extenders:RadioButtonEnum x:Name="radNovoArquivo" Content="Novo arquivo ?" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding ConfigArquivo}" EnumValue="NOVO_ARQUIVO"/>
+            <extenders:RadioButtonEnum x:Name="radArquivoExistente" Content="Arquivo existente ?" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding ConfigArquivo}" EnumValue="ARQUIVO_EXISTENTE"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" Margin="0,5,0,0" Visibility="{Binding ElementName=radNovoArquivo, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverter}}">
+            <StackPanel>
+                <CheckBox x:Name="chkMover" Content="Salvar arquivo em outro caminho ?" Margin="0,0,0,50" IsChecked="{Binding ArquivoEmOutroCaminho, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Caminho do arquivo" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" IsReadOnly="True" Text="{Binding CaminhoMdf, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Grid.Column="1" Content="..." Height="23" Visibility="{Binding ElementName=chkMover, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverter}}"
+                            Click="MoverArquivo_Click"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="2" Margin="0,5,0,0" Visibility="{Binding ElementName=radArquivoExistente, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverter}}">
+            <StackPanel>
+                <TextBlock Text="Busque o local do arquivo" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" IsReadOnly="True" Text="{Binding CaminhoArquivoExistente, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Grid.Column="1" Content="..." Height="23" Click="BuscarArquivo_Click"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <TextBlock Grid.Row="3" Text="Mantenha os arquivos BDSIF.mdf e BDSIF_1.ldf em um local seguro. Faça backup/cópia sempre que possível, pois é nestes arquivos que estão todos os seus dados." 
+                   TextWrapping="Wrap" Foreground="Red" Margin="0,10,0,10"/>
+    </Grid>
+</UserControl>    

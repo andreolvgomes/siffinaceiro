@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F1DFC4D-83C7-45E7-9497-A0D55F7B2984}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIF.Commom</RootNamespace>
+    <AssemblyName>SIF.Commom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonInstancia.cs" />
+    <Compile Include="Converters\BooleanToInvert.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverterInvert.cs" />
+    <Compile Include="Converters\BooleanToVisibilityZeroCollapsed.cs" />
+    <Compile Include="Converters\ConvertDataGridRowBaixaFull.cs" />
+    <Compile Include="Converters\ConvertEllipseCrfinanceiroStatus.cs" />
+    <Compile Include="Converters\ConvertForegroundListViewItemMovimentacao.cs" />
+    <Compile Include="Converters\ConvertBooleanZeroTrueOneFalse.cs" />
+    <Compile Include="Converters\ConvertToolTipCrfinanceiroStatus.cs" />
+    <Compile Include="Converters\ConvertZeroVisibility.cs" />
+    <Compile Include="DbExecutaScripts.cs" />
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="Extenders\ScrollViewerToEnd.cs" />
+    <Compile Include="Extenders\RadioButtonEnum.cs" />
+    <Compile Include="Extenders\TextBoxData.cs" />
+    <Compile Include="Extenders\TextBoxInteger.cs" />
+    <Compile Include="Extensions\DataRowViewGetValue.cs" />
+    <Compile Include="Extensions\GetValueInDataRow.cs" />
+    <Compile Include="Extensions\ListOrganizaWhere.cs" />
+    <Compile Include="Extensions\ListToObservableCollection.cs" />
+    <Compile Include="PegaDescricaoEnum.cs" />
+    <Compile Include="Extenders\MaskTextBox.cs" />
+    <Compile Include="Converters\ConvertBytesToImageBrush.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RedimensionarImage.cs" />
+    <Compile Include="Extenders\TextBoxDecimal.cs" />
+    <Compile Include="Statics\XmlXElement.cs" />
+    <Compile Include="UssessaoEnum.cs" />
+    <Compile Include="Util\FilhosDependencyObject.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\acre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\alagoas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\amapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\amazonas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\bahia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\ceara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\distritofederal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\espiritosanto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\goias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\maranhao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\matogrosso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\matogrossodosul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\minasgerais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\para.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\paraiba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\parana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\pernambuco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\piaui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\riodejaneiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\riograndedonorte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\riograndedosul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\rondonia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\roraima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\santacatarina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\saopaulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\sergipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ImgEstado\tocantins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SIF.Model\SIF.Model.csproj">
+      <Project>{48d2bd07-6f91-419c-8cd0-2ce188434c3f}</Project>
+      <Name>SIF.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

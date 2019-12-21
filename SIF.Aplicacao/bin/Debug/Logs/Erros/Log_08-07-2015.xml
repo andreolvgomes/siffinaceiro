@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:30:05</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:30:15</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:30:22</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:06</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:11</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:13</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:16</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:18</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:31:21</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:32:02</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:32:32</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:34:06</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0016'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/07/2015 Hora: 11:35:26</DataHora>
+    <System.Data>
+      <Message>Syntax error: Missing operand after ''0.0.0.0.000.000.0000'' operator.</Message>
+      <TargetSite>System.Data.ExpressionNode Parse()</TargetSite>
+      <StackTrace>   at System.Data.ExpressionParser.Parse()
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas.Validacao(Planocontas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs:line 89
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 252
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 125</StackTrace>
+    </System.Data>
+  </Error>
+</LogErros>

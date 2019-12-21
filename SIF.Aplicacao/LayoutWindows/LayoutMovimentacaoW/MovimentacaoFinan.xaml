@@ -1,0 +1,114 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutMovimentacao.MovimentacaoFinan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:commom="clr-namespace:SIF.Commom;assembly=SIF.Commom"
+        xmlns:local="clr-namespace:SIF.Aplicacao.UserControls"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+                  Title="MOVIMENTAÇÃO" ShowInTaskbar="False" IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterOwner" SizeToContent="Height"
+        Width="700" ResizeMode="NoResize" 
+        >
+
+    <Window.Resources>
+        <converters:BooleanToInvert x:Key="booleanToInvert"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:Buttons x:Name="buttons"/>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border x:Name="imgFoto" Grid.Column="0" BorderBrush="{StaticResource Accent}" BorderThickness="2" Height="174" Width="150" Padding="2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Icones/movimentacaofinan.png"/>
+                    </Border.Background>
+                </Border>
+
+                <StackPanel Grid.Column="1" Margin="10">
+                    <TextBlock Text="{Binding Provider.Entidade.Cam_sequencial}" FontSize="30" Style="{StaticResource StyleTextBlockResumo}"/>
+                    <!--<TextBlock Text="{Binding ElementName=txtCodigo, Path=Text}" FontSize="25" Style="{StaticResource StyleTextBlockResumo}"/>-->
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Margin="0,5,0,0">
+                <TextBlock Text="Cliente/Fornecedor/Credor/Emissor" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCliente" PreviewKeyDown="Txt_PreviewKeyDown" Text="{Binding Provider.Entidade.NomeCliente, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                         IsReadOnly="{Binding SomenteLeitura}" MaxLength="50"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Fpagamento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtFpagamento" Grid.Row="1" Grid.Column="0" PreviewKeyDown="Txt_PreviewKeyDown" Text="{Binding Provider.Entidade.FpagamentoDescricao, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                             IsReadOnly="{Binding SomenteLeitura}" MaxLength="30"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Plano contas" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtPlanoContas" Grid.Row="1" Grid.Column="1" PreviewKeyDown="Txt_PreviewKeyDown" extenders:MaskTextBox.Mask="0.0.0.0.000.000.0000"
+                             Text="{Binding Provider.Entidade.Pla_numeroconta, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="20"
+                             IsReadOnly="{Binding SomenteLeitura}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Caixa" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtCaixa" Grid.Row="1" Grid.Column="0" PreviewKeyDown="Txt_PreviewKeyDown"
+                             Text="{Binding Provider.Entidade.Caixa, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" IsReadOnly="{Binding SomenteLeitura}" MaxLength="30"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Tipo movimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <ComboBox x:Name="cmbTipoMov" Grid.Row="1" Grid.Column="1" SelectedValue="{Binding Provider.Entidade.TipoMovimentoEscolhido, UpdateSourceTrigger=PropertyChanged}" 
+                              ItemsSource="{Binding ListTipoMovimento}" IsEnabled="{Binding SomenteLeitura, Converter={StaticResource booleanToInvert}}"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Data lançamento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtDataLancamento" Grid.Row="1" Grid.Column="0" Width="150" extenders:MaskTextBox.Mask="00/00/0000" Text="{Binding Provider.Entidade.DataLancamento, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                             IsReadOnly="{Binding SomenteLeitura}"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Valor" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <extenders:TextBoxDecimal x:Name="txtValor" Grid.Row="1" Grid.Column="1" Width="150" Text="{Binding Provider.Entidade.Valor, UpdateSourceTrigger=PropertyChanged}"
+                                           IsReadOnly="{Binding SomenteLeitura}" Style="{StaticResource StyleTextBox}"/>
+                </Grid>
+                <TextBlock Text="Observação/Discriminação" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox Text="{Binding Provider.Entidade.Cam_observacao, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding SomenteLeitura}"  MaxLength="500" Height="80" TextWrapping="Wrap" CharacterCasing="Normal"
+                         ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</mui:ModernWindow>

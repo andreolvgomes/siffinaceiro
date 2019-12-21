@@ -1,0 +1,40 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.Menu"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  Title="SIF - Sistema Financeiro" IsTitleVisible="True" ContentSource="/Layouts/LayoutCadastros.xaml" Width="800" Height="700" WindowState="Maximized"
+                  >
+
+    <!--<mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Layout" Source="/Layouts/Settings.xaml"/>
+        <mui:Link DisplayName="Help"/>
+    </mui:ModernWindow.TitleLinks>-->
+    
+    <mui:ModernWindow.MenuLinkGroups>
+        <!--<mui:LinkGroup DisplayName="INÍCIO">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Layouts/LayoutInicio.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>-->
+        <mui:LinkGroup DisplayName="CADASTROS">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Layouts/LayoutCadastros.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="FINANCEIRO">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Layouts/LayoutFinanceiro.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="MOVIMENTAÇÃO">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Layouts/LayoutMovimentacoes.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="PAINEL">
+            <mui:LinkGroup.Links>
+                <mui:Link Source="/Layouts/LayoutPainelMenu.xaml"/>
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+</mui:ModernWindow>

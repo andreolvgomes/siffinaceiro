@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SIF.Aplicacao.LayoutWindows.LayoutPainelW.ConfigDatabase"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Row="0" Grid.Column="0" Header="Ao logar no Sistema">
+            <StackPanel>
+                <CheckBox  Content="Ao logar no Sistema procurar e restaurar um backup mais recente?" IsChecked="{Binding RestoreAoLogar}"
+                          Checked="AoLogarCheckBox_Checked"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" IsReadOnly="True" Text="{Binding PathRestoreAoLogar, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Grid.Column="1" Content="..." Height="21" IsEnabled="{Binding RestoreAoLogar}" Click="AoLogar_Click"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="0" Grid.Column="1" Header="Ao restaurar backup">
+            <StackPanel>
+                <CheckBox Content="Ao restaurar backup selecionar arquivo mais recente?" Checked="RestoreMaisRecenteCheckBox_Checked"
+                          IsChecked="{Binding RestoreMaisRecente}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" IsReadOnly="True" Text="{Binding PathRestoreFileRecente, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Grid.Column="1" Content="..." Height="21" IsEnabled="{Binding RestoreMaisRecente}" Click="RestoreRecente_Click"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>        
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="SIF.Aplicacao.Layouts.LayoutFinanceiro"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:imageIcon="clr-namespace:SIF.Aplicacao.Layouts"
+             xmlns:teste="clr-namespace:SIF.Aplicacao.Layouts"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             >
+    <UserControl.Resources>
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="Margin" Value="10 2 10 2"/>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel>
+                
+                <TextBlock Text="LANÇAMENTOS" Style="{StaticResource TextBlockHeading}"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Titulo="Contas a Pagar" IconSource="/Icones/contaspagar.png" ToolTipDescricao="Lançamento de Contas a pagar" MouseLeftButtonDown="ContasPagar_Click"/>
+                    <imageIcon:ImageIcon Titulo="Contas a Receber" IconSource="/Icones/contasreceber.png" ToolTipDescricao="Lançamento de Contas a receber" MouseLeftButtonDown="ContasReceber_Click"/>
+                    <imageIcon:ImageIcon Titulo="Gerador de Parcelas" IconSource="/Icones/geradorparcelas.png" ToolTipDescricao="Gerador de parcelas para Contas a receber e pagar" MouseLeftButtonDown="ImageIcon_MouseLeftButtonDown_1"/>
+                </ListView>
+                
+                <TextBlock Text="BAIXAS" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Titulo="Contas a Pagar" IconSource="/Icones/baixacontaspagar.png" MouseLeftButtonDown="BaixasContasPagar_Click"/>
+                    <imageIcon:ImageIcon Titulo="Contas a Receber" IconSource="/Icones/baixacontasreceber.png" MouseLeftButtonDown="BaixasContasReceber_Click"/>
+                    <imageIcon:ImageIcon Titulo="Baixa Legal" IconSource="/Icones/baixafull.png" MouseLeftButtonDown="BaixaColetiva_Click"/>
+                    <imageIcon:ImageIcon Titulo="Faturamentos" IconSource="/Icones/faturamento.png" MouseLeftButtonDown="Faturamento_Click"/>
+                </ListView>
+
+                <!--<TextBlock Text="CONTAS BAIXADA" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Titulo="Contas a pagar" Icone="/Icones/contaspagarbaixada.png"/>
+                    <imageIcon:ImageIcon Titulo="Contas a receber" Icone="/Icones/contasreceberbaixada.png"/>
+                </ListView>-->
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

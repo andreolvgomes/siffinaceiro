@@ -1,0 +1,200 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutCadastroW.CadastroClientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        xmlns:usercontrol="clr-namespace:SIF.Aplicacao.UserControls"
+        Title="CLIENTE" ShowInTaskbar="False" IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterOwner" SizeToContent="Height"
+        >
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <usercontrol:Buttons x:Name="buttons" Grid.Row="0"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Border x:Name="imgFoto" Grid.Column="0" BorderBrush="{StaticResource Accent}" BorderThickness="2" Width="150" Padding="2" Height="185">
+                        <Image Source="{Binding Entidade.Cli_foto}" Stretch="Fill"/>
+                    </Border>
+
+                    <Button Grid.Row="1" Grid.Column="0" Content="Alterar foto" Click="btnAddFoto_Click" Margin="0,2,0,0" Height="25"/>
+
+                    <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Margin="10,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Entidade.Cli_nome}" FontSize="30" Style="{StaticResource StyleTextBlockResumo}"/>
+                            <TextBlock Text="{Binding Entidade.Cli_sexo}" FontSize="20" Style="{StaticResource StyleTextBlockResumo}"/>
+                            <TextBlock Text="{Binding Entidade.DataNascimento}" FontSize="20" Style="{StaticResource StyleTextBlockResumo}"/>
+                        </StackPanel>
+
+                        <Grid Grid.Row="1" VerticalAlignment="Bottom">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nome  " Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtNomeCompleto" Text="{Binding Entidade.Cli_nome, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" 
+                                 MaxLength="50"/>
+                            <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <GroupBox Grid.Column="0" Header="Pessoa">
+                                    <Grid VerticalAlignment="Center">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                            <extenders:RadioButtonEnum Content="Física" EnumBinding="{Binding Entidade.TipoPessoa, UpdateSourceTrigger=PropertyChanged}" EnumValue="Fisica" Style="{StaticResource StyleRadioButton}"/>
+                                            <extenders:RadioButtonEnum Content="Jurídica" Margin="10,0,0,0" EnumBinding="{Binding Entidade.TipoPessoa, UpdateSourceTrigger=PropertyChanged}" EnumValue="Juridica" Style="{StaticResource StyleRadioButton}"/>
+                                        </StackPanel>
+                                        <TextBlock Grid.Row="1" Text="CPF/CNPJ" Style="{StaticResource StyleTextBlockTitulo}"/>
+                                        <TextBox Grid.Row="2" Text="{Binding Entidade.Cli_cpfcnpj, UpdateSourceTrigger=PropertyChanged}" MaxLength="18"/>
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Grid.Column="1" Header="Dados">
+                                    <Grid VerticalAlignment="Center">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Apelido" Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Center"/>
+                                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Entidade.Cli_apelido, UpdateSourceTrigger=PropertyChanged}" MaxLength="30"/>
+
+                                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Fone" Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Center"/>
+                                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Entidade.Cli_celular, UpdateSourceTrigger=PropertyChanged}" MaxLength="15"
+                                             extenders:MaskTextBox.Mask="0000-0000"/>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+
+                <StackPanel Grid.Row="1" Margin="0,5,0,0">
+                    <!--<TextBlock Grid.Row="0" Grid.Column="0" Text="Nome completo" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtNomeCompleto" Grid.Row="1" Grid.Column="0" Text="{Binding Entidade.Cli_nome, UpdateSourceTrigger=PropertyChanged}" MaxLength="50"/>-->
+
+                    <!--endereço-->
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Endereço" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtEndereco" Grid.Row="1" Grid.Column="0" Text="{Binding Entidade.Cli_endereco, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="50"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Número" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox Grid.Row="1" Grid.Column="0" Width="50" Text="{Binding Entidade.Cli_numero, UpdateSourceTrigger=PropertyChanged}" MaxLength="6"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="Bairro" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtBairro" Grid.Row="1" Grid.Column="1" Text="{Binding Entidade.Cli_bairro, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="30"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="2" Text="Cidade" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtCidade" Grid.Row="1" Grid.Column="2" Text="{Binding Entidade.Cli_cidade, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="30"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="3" Text="UF" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <ComboBox Grid.Row="1" Grid.Column="3" Width="60" ItemsSource="{Binding Entidade.ListaCommom.ListUFs}" SelectedItem="{Binding Entidade.Cli_uf, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="4" Text="Cep" Width="100" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox Grid.Row="1" Grid.Column="4" Text="{Binding Entidade.Cli_cep, UpdateSourceTrigger=PropertyChanged}" MaxLength="9"/>
+                    </Grid>
+                    <TextBlock Text="Complemento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox Text="{Binding Entidade.Cli_complemento, UpdateSourceTrigger=PropertyChanged}" MaxLength="50"/>
+                    <GroupBox Grid.Column="1" Header="Extra">
+                        <StackPanel>
+                            <TextBlock Text="Extra 1" Style="{StaticResource StyleTextBlockTitulo}"/>
+                            <TextBox Text="{Binding Entidade.Cli_extra1, UpdateSourceTrigger=PropertyChanged}" MaxLength="50"/>
+                            <TextBlock Text="Extra 2" Style="{StaticResource StyleTextBlockTitulo}"/>
+                            <TextBox Text="{Binding Entidade.Cli_extra2, UpdateSourceTrigger=PropertyChanged}" MaxLength="50"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Fone 1" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox Grid.Row="1" Grid.Column="0" Text="{Binding Entidade.Cli_fone1, UpdateSourceTrigger=PropertyChanged}" MaxLength="15"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="Fone 2" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding Entidade.Cli_fone2, UpdateSourceTrigger=PropertyChanged}" MaxLength="15"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Data nascimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtDtNascimento" extenders:MaskTextBox.Mask="00/00/0000" Grid.Row="1" Grid.Column="0" Text="{Binding Entidade.DataNascimento, UpdateSourceTrigger=PropertyChanged}" Width="100" MaxLength="10"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="Naturalidade" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Entidade.Cli_naturalidade, UpdateSourceTrigger=PropertyChanged}" MaxLength="30"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="2" Text="Estado Civil" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <ComboBox Grid.Row="1" Grid.Column="2" SelectedItem="{Binding Entidade.Cli_estadocivil, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding Entidade.ListaCommom.ListEstadoCivil}"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="3" Text="Sexo" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <ComboBox Grid.Row="1" Grid.Column="3" ItemsSource="{Binding Entidade.ListaCommom.ListSexo}" SelectedItem="{Binding Entidade.Cli_sexo, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    </Grid>
+                    <TextBlock Text="Observação" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox Text="{Binding Entidade.Cli_observacao, UpdateSourceTrigger=PropertyChanged}" MaxLength="200"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</mui:ModernWindow>

@@ -1,0 +1,7 @@
+D:\OneDrive\Programação\SIF\EditorSQL\bin\Release\EditorSQL.dll
+D:\OneDrive\Programação\SIF\EditorSQL\bin\Release\EditorSQL.pdb
+D:\OneDrive\Programação\SIF\EditorSQL\obj\Release\EditorSQL.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\EditorSQL\obj\Release\EditorSQL.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\EditorSQL\obj\Release\EditorSQL.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\EditorSQL\obj\Release\EditorSQL.dll
+D:\OneDrive\Programação\SIF\EditorSQL\obj\Release\EditorSQL.pdb

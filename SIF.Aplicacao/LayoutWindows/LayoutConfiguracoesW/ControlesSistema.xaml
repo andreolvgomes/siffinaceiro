@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="SIF.Aplicacao.LayoutWindows.LayoutConfiguracoesW.ControlesSistema"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+             xmlns:commom="clr-namespace:SIF.Commom;assembly=SIF.Commom"
+             xmlns:imageIcon="clr-namespace:SIF.Aplicacao.Layouts"
+             >
+    <Grid Style="{StaticResource ContentRoot}">
+        <GroupBox Header="OPÇÕES DE CONSULTAS">
+            <StackPanel Margin="10">
+                <extenders:RadioButtonEnum Content="COM VIEW EM TEMPO DE EXECUÇÃO !" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding SelectedConsul}" EnumValue="COM_VIEW_EM_EXECUCAO"/>
+                <extenders:RadioButtonEnum Content="COM VIEW E STORED PROCEDURE !" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding SelectedConsul}" EnumValue="COM_VIEW_E_SP"/>
+                <extenders:RadioButtonEnum Content="COM SELECT(QUERY) PURO !" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding SelectedConsul}" EnumValue="COM_SELECT_QUERY_PURO"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>

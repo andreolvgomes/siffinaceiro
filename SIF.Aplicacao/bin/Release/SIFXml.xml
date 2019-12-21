@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SISTEMA>
+  <DEFINICOES>
+    <Armazenamento>ARMAZENAMENTO_BANCO_DE_DADOS</Armazenamento>
+    <SQLServer>
+      <Instancia>.</Instancia>
+      <Autenticacao>false</Autenticacao>
+      <UsuarioSql></UsuarioSql>
+      <SenhaSql></SenhaSql>
+      <InfoTimeout>false</InfoTimeout>
+      <Timeout></Timeout>
+    </SQLServer>
+  </DEFINICOES>
+</SISTEMA>

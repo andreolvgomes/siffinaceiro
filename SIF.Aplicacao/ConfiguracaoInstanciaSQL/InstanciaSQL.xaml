@@ -1,0 +1,54 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.InstanciaSQL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:local="clr-namespace:SIF.Aplicacao"
+        Title="ACESSO AO BANCO" IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterScreen"
+        Width="600" ResizeMode="NoResize" SizeToContent="Height"
+        >
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid Margin="20,20,20,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Instância Servidor SQL" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <ComboBox x:Name="cmbBox" ItemsSource="{Binding ListInstancias}" SelectedValue="{Binding Instancia, UpdateSourceTrigger=PropertyChanged}" 
+                      Text="{Binding Instancia, UpdateSourceTrigger=PropertyChanged}" IsEditable="True"/>
+
+            <CheckBox x:Name="chkTimeOut" Content="Connection timeout" Margin="0,10,0,0" IsChecked="{Binding InfoTimeout}"
+                      Checked="chkTimeOut_Checked_1" Unchecked="chkTimeOut_Unchecked_1"/>
+            <CheckBox x:Name="chkAutenticacao" Content="Autenticação" Margin="0,0,0,10" IsChecked="{Binding Autenticacao}"
+                      Checked="chkAutenticacao_Checked_1" Unchecked="chkAutenticacao_Unchecked_1"/>
+            
+            <StackPanel IsEnabled="{Binding Autenticacao}">
+                <TextBlock Text="Usuário" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtUsuario" CharacterCasing="Normal" Text="{Binding UsuarioSql, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Senha" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <PasswordBox x:Name="txtSenha" PasswordChanged="PasswordBox_PasswordChanged_1"/>
+                <TextBlock Text="É necessário que o Servidor SQL esteja configurado para conexões autenticada!" Foreground="Red" 
+                           Visibility="{Binding ElementName=chkAutenticacao, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverter}}"/>
+            </StackPanel>
+            <StackPanel Visibility="{Binding InfoTimeout, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Text="Timeout" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtTimeout" CharacterCasing="Normal" Text="{Binding Timeout, UpdateSourceTrigger=PropertyChanged}" Width="100" HorizontalAlignment="Left"
+                         PreviewTextInput="txtTimeout_PreviewTextInput" MaxLength="2"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Width="300" HorizontalAlignment="Right" Margin="0,2,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Salvar" Click="Salvar_Click"/>
+            <Button Grid.Column="1" Content="Cancelar" Click="Cancelar_Click"/>
+        </Grid>
+    </Grid>
+</mui:ModernWindow>

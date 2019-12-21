@@ -1,0 +1,49 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="ACESSO AO SISTEMA" IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterScreen"
+        Height="300" Width="650" ResizeMode="NoResize" VisivelButtonClose="False"
+        >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+        </StackPanel>
+        <!--<mui:ModernProgressRing Grid.Column="0" IsActive="True" Style="{StaticResource DoubleBounceProgressRingStyle}"/>-->
+        <Grid Grid.Column="1" Width="300" VerticalAlignment="Bottom" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Ellipse Stroke="{StaticResource Accent}" Margin="-294,-2,168,-87" Grid.RowSpan="5"/>
+            <Ellipse Stroke="{StaticResource Accent}" Margin="-381,-115,255,29" Grid.RowSpan="5"/>
+            <Ellipse Stroke="{StaticResource Accent}" Margin="154,-231,-57,112" Grid.Column="1"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Login     " Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtNome" Grid.Row="0" Grid.Column="1" MaxLength="20" ToolTip="Informe o Usuário de acesso"/>
+            
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Senha     " Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Center" Margin="0,5,0,0"/>
+            <PasswordBox x:Name="pwdSenha" Grid.Row="2" Grid.Column="1" MaxLength="20" Margin="1,5,1,0" ToolTip="Informe a Senha de acesso"/>
+
+            <Grid Grid.Row="4" Grid.Column="1" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Acessar" Click="Button_Click_1"/>
+                <Button Grid.Column="1" Content="Cancelar" Click="Cancelar_Click"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</mui:ModernWindow>
+   

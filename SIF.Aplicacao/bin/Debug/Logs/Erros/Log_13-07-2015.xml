@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 13/07/2015 Hora: 11:01:21</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void SetTrocaVAloresBaseToInterface(SIF.Camovimentos)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.ProviderMovimentacaoFinan.SetTrocaVAloresBaseToInterface(Camovimentos model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderMovimentacaoFinan.cs:line 132
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_TrocaValoresBaseToInterfaceBucandoEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 236
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 158</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 13/07/2015 Hora: 11:01:28</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void SetTrocaVAloresBaseToInterface(SIF.Camovimentos)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.ProviderMovimentacaoFinan.SetTrocaVAloresBaseToInterface(Camovimentos model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderMovimentacaoFinan.cs:line 132
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_TrocaValoresBaseToInterfaceBucandoEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 236
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 158</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 13/07/2015 Hora: 11:01:33</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void SetTrocaVAloresBaseToInterface(SIF.Camovimentos)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.ProviderMovimentacaoFinan.SetTrocaVAloresBaseToInterface(Camovimentos model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderMovimentacaoFinan.cs:line 132
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.OnEvent_TrocaValoresBaseToInterfaceBucandoEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 236
+   at SIF.Aplicacao.ProviderInterfacesCadastros`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros.cs:line 158</StackTrace>
+    </SIF>
+  </Error>
+</LogErros>

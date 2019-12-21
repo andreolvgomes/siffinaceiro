@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data04-07-2015 Hora15:54:59</DataHora>
+    <asdfafd>Asdfsadf</asdfafd>
+  </Error>
+  <Error>
+    <DataHora>Data: 04-07-2015 Hora: 15:55:40</DataHora>
+    <asdfafd>Asdfsadf</asdfafd>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 15:56:31</DataHora>
+    <asdfafd>Asdfsadf</asdfafd>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:05:47</DataHora>
+    <Message>sadf</Message>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:13:27</DataHora>
+    <Message>sadf</Message>
+    <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:15:10</DataHora>
+    <Message>sadf</Message>
+    <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+    <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:19:09</DataHora>
+    <Fonte>SIF</Fonte>
+    <Message>sadf</Message>
+    <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+    <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:20:17</DataHora>
+    <SIF />
+    <Message>sadf</Message>
+    <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+    <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:21:07</DataHora>
+    <SIF>
+      <Message>sadf</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:45:54</DataHora>
+    <SIF>
+      <Message>sadf</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:47:25</DataHora>
+    <SIF>
+      <Message>sadf</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:50:11</DataHora>
+    <SIF>
+      <Message>sadf</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:53:08</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:53:36</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:53:59</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:54:34</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:55:05</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 16:55:24</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:02:23</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:02:48</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:03:07</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:03:33</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:04:11</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:04:33</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:05:01</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:06:08</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:06:33</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:06:57</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:07:15</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:08:16</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:08:34</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:09:52</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:10:02</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:10:28</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:20:02</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:20:29</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:21:15</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:21:20</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:21:40</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:22:19</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:22:32</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:23:04</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:23:42</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 04/07/2015 Hora: 17:23:58</DataHora>
+    <SIF>
+      <Message>Erro de teste</Message>
+      <TargetSite>Void S_Startup(System.Object, System.Windows.StartupEventArgs)</TargetSite>
+      <StackTrace>   at SIFAplicacao.App.S_Startup(Object sender, StartupEventArgs e) in d:\OneDrive\Programação\SIF\SIFAplicacao\App.xaml.cs:line 37</StackTrace>
+    </SIF>
+  </Error>
+</LogErros>

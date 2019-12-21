@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuracao>
+  <SQL>
+    <Instancia>.</Instancia>
+    <Autenticado>False</Autenticado>
+    <Usuario />
+    <Senha />
+    <InfTimeout>false</InfTimeout>
+    <Timeout />
+  </SQL>
+</Configuracao>

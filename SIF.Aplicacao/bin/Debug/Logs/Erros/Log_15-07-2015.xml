@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 15/07/2015 Hora: 22:40:25</DataHora>
+    <mscorlib>
+      <Message>Could not find file 'D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\BDSIF.mdf'.</Message>
+      <TargetSite>Void WinIOError(Int32, System.String)</TargetSite>
+      <StackTrace>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at SIF.Aplicacao.ConfiguracaoInstanciaSQL.ContextInicial.OrganizaDados(Window owner) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\ConfiguracaoInstanciaSQL\ContextInicial.cs:line 537</StackTrace>
+    </mscorlib>
+  </Error>
+</LogErros>

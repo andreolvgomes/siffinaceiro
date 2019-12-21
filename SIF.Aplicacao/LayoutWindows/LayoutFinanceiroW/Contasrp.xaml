@@ -1,0 +1,145 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutFinanceiroW.Contasrp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:buttons="clr-namespace:SIF.Aplicacao.UserControls"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+        IsTitleVisible="True" Style="{StaticResource BlankWindow}" Title="{Binding ControleLayout.Titulo}" SizeToContent="Height" WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <converters:ConvertEllipseCrfinanceiroStatus x:Key="convertEllipseCrfinanceiroStatus"/>
+        <converters:BooleanToVisibilityZeroCollapsed x:Key="booleanToVisibilityZeroCollapsed"/>
+        <converters:ConvertToolTipCrfinanceiroStatus x:Key="convertToolTipCrfinanceiroStatus"/>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid Grid.Row="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <buttons:Buttons x:Name="buttons" Grid.Column="0"/>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" BorderBrush="{StaticResource Accent}" BorderThickness="2" Height="174" Width="150" Padding="2">
+                    <Image Stretch="Fill" Source="{Binding ControleLayout.Logo}"/>
+                </Border>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Margin="10">
+                            <TextBlock Text="{Binding Provider.Entidade.Crf_sequencial}" FontSize="30" Style="{StaticResource StyleTextBlockResumo}"/>
+                            <TextBlock Text="{Binding Provider.Entidade.Crf_datalancamento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}" FontSize="25" Style="{StaticResource StyleTextBlockResumo}"/>
+                        </StackPanel>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Ellipse Grid.Row="0" Height="25" Width="25" VerticalAlignment="Top" Fill="{Binding Provider.Entidade, Converter={StaticResource convertEllipseCrfinanceiroStatus}}"
+                                 ToolTip="{Binding Provider.Entidade, Converter={StaticResource convertToolTipCrfinanceiroStatus}}" HorizontalAlignment="Right">
+                                <Ellipse.Effect>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="2"/>
+                                </Ellipse.Effect>
+                            </Ellipse>
+                            <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                                <Button Content="Anexar imagem" Click="AnexarImage_Click"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="2" Text="Nº documento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtNdocumento" Grid.Row="1" Grid.Column="1" Text="{Binding Provider.Entidade.Crf_ndocumento, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="20"
+                                 ToolTip="Informe aqui o Nº do Documento que está sendo lançado" Grid.ColumnSpan="2" Margin="119,1,26,1"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="3" Text="Data vencimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtVencimento" Grid.Row="1" Grid.Column="3" Text="{Binding Provider.Entidade.Vencimento, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                             extenders:MaskTextBox.Mask="00/00/0000" ToolTip="Informe aqui a data de vencimento"/>
+
+                        <TextBlock Grid.Row="0" Grid.Column="4" Text="Parcela" Style="{StaticResource StyleTextBlockTitulo}"/>
+                        <TextBox x:Name="txtParcela" Grid.Row="1" Grid.Column="4" Text="{Binding Provider.Entidade.Crf_parcela, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="2"
+                                 ToolTip="Informe aqui o Nº da Parcela"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Margin="0,5,0,0">
+                <TextBlock Text="Cliente/Fornecedor" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtClienteForn" Text="{Binding Provider.Entidade.NomeCliente, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="50"
+                         PreviewKeyDown="txt_PreviewKeyDown" ToolTip="Informe aqui o nome do Cliente/Fornecedor/Credor/Emissor/ etec ... ou pressione F2 para buscar na grade de consulta"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="F.Pagamento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtFpagamento" Grid.Row="1" Grid.Column="0" Text="{Binding Provider.Entidade.DescricaoFpagamento, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="30"
+                             PreviewKeyDown="txt_PreviewKeyDown" ToolTip="Informe aqui uma F.Pagamento ou pressione F2 para buscar na grade de consulta"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Plano de contas" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <TextBox x:Name="txtPlanoContas" Grid.Row="1" Grid.Column="1" Text="{Binding Provider.Entidade.Pla_numeroconta, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                             extenders:MaskTextBox.Mask="0.0.0.0.000.000.0000" PreviewKeyDown="txt_PreviewKeyDown" ToolTip="Informe aqui um Plano de Contas ou pressione F2 para buscar na grade de consulta"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Valor da parcela" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <extenders:TextBoxDecimal x:Name="txtValor" Grid.Row="1" Grid.Column="2" Width="150" Text="{Binding Provider.Entidade.ValorParcela, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="10"
+                                           Style="{StaticResource StyleTextBox}" ToolTip="Informe aqui o Valor da Parcela"/>
+
+                    <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding ControleLayout.DescricaoValor}" Style="{StaticResource StyleTextBlockTitulo}"/>
+                    <extenders:TextBoxDecimal x:Name="txtValorAReceber" Grid.Row="1" Grid.Column="3" Width="150" Text="{Binding Provider.Entidade.ValorAReceber, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" MaxLength="10"
+                                           GotKeyboardFocus="txtValorAReceber_GotKeyboardFocus_1" Style="{StaticResource StyleTextBox}" ToolTip="Informe aqui o Valor a Receber/Pagar"/>
+                </Grid>
+
+                <TextBlock Text="Observação/Discriminação" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtObs" Text="{Binding Provider.Entidade.Crf_observacao, UpdateSourceTrigger=PropertyChanged}" MaxLength="500" Height="80" TextWrapping="Wrap" CharacterCasing="Normal"
+                         ScrollViewer.VerticalScrollBarVisibility="Visible"  ToolTip="Informe aqui uma observação/discriminação da Conta, se desejar!"/>
+
+                <TextBlock FontSize="14" Style="{StaticResource StyleTextBlockResumo}" Visibility="{Binding Status, Converter={StaticResource booleanToVisibilityConverter}}"
+                           Text="{Binding StatusRegistro}" Foreground="{Binding ForegroundStatus}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</mui:ModernWindow>

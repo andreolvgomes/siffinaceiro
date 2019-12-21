@@ -1,0 +1,24 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.ConfiguracaoInstanciaSQL.Navigate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:local="clr-namespace:SIF.Aplicacao"
+        IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterScreen"
+        Width="600" ResizeMode="NoResize" SizeToContent="Height"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="main" Grid.Row="0" Height="250">
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnAnterior" Content="Anterior" Width="150" Click="Anterior_Click"/>
+            <Button x:Name="btnProximo" Content="Próximo" Width="150" Click="Proximo_Click"/>
+            <Button x:Name="btnSalvar" Content="Salvar" Width="150" Click="Salvar_Click"/>
+        </StackPanel>
+    </Grid>
+</mui:ModernWindow>

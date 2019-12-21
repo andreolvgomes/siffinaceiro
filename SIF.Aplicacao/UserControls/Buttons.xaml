@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="SIF.Aplicacao.UserControls.Buttons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Margin="0,0,0,10">
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnNovo" Grid.Column="0" Content="Novo" Command="{Binding CommandNovo}" Width="100" ToolTip="Novo registro"
+                Visibility="{Binding VisivelNovo, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                <Button x:Name="btnSalvar" Grid.Column="1" Content="Salvar" Command="{Binding CommandSalvar}" Width="100" ToolTip="Salva novo ou alterações"
+                Visibility="{Binding VisivelSalvar, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                <Button x:Name="btnCancelar" Grid.Column="2" Content="Cancelar" Command="{Binding CommandCancelar}" Width="100" ToolTip="Cancela novo ou alterações"
+                Visibility="{Binding VisivelCancelar, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                <Button x:Name="btnExcluir" Grid.Column="3" Content="Excluir" Command="{Binding CommandExcluir}" Width="100" ToolTip="Exclui registro"
+                Visibility="{Binding VisivelExcluir, Converter={StaticResource booleanToVisibilityConverter}}"/>
+            </Grid>
+            <Grid Grid.Column="1" HorizontalAlignment="Right">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Content="|&lt;" Command="{Binding CommandPrimeiro}" Width="100" ToolTip="Ir para o primeiro registro"
+                Visibility="{Binding VisivelNavegacao, Converter={StaticResource booleanToVisibilityConverter}}"/>
+
+                <Button Grid.Column="1" Content="&lt;&lt;" Command="{Binding CommandAnterior}" Width="100" ToolTip="Ir para registro anterior"
+                Visibility="{Binding VisivelNavegacao, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                <Button Grid.Column="2" Content="&gt;&gt;" Command="{Binding CommandProximo}" Width="100" ToolTip="Ir para próximo registro"
+                Visibility="{Binding VisivelNavegacao, Converter={StaticResource booleanToVisibilityConverter}}"/>
+
+                <Button Grid.Column="3" Content="&gt;|" Command="{Binding CommandUltimo}" Width="100" ToolTip="Ir para último registro"
+                Visibility="{Binding VisivelNavegacao, Converter={StaticResource booleanToVisibilityConverter}}"/>
+
+                <Button Grid.Column="4" Content="C" Command="{Binding CommandPesquisa}" Width="40" ToolTip="Consulta na grade de pesquisa"
+                Visibility="{Binding VisivelPesquisa, Converter={StaticResource booleanToVisibilityConverter}}"/>
+            </Grid>
+        </Grid>
+        
+        <!--<Separator Grid.Row="1" Margin="0,5,0,0"/>-->
+        <!--<Path Grid.Row="1" Fill="#FFFFFFFF" Stretch="Fill" Margin="0,5,0,0" Height="5" Data="M26,107 L220.04123,107" SnapsToDevicePixels="True">
+            <Path.Stroke>
+                <LinearGradientBrush EndPoint="0.975,0.5" StartPoint="0.005,0.5">
+                    <GradientStop Color="#00ECAD25" Offset="1"/>
+                    <GradientStop Color="#87ECAD25" Offset="0"/>
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>-->
+        
+        <Border Grid.Row="1" Margin="0,5,0,0" Height="3">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.975,0.5" StartPoint="0.005,0.5">
+                    <GradientStop Color="#00ECAD25" Offset="1"/>
+                    <GradientStop Color="{DynamicResource AccentColor}" Offset="0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+    </Grid>
+</UserControl>

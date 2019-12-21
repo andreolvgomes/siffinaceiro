@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 28/10/2015 Hora: 20:21:22</DataHora>
+    <PresentationFramework>
+      <Message>'InfoGradient' resource not found.</Message>
+      <TargetSite>System.Object DoTryCatchWhen(System.Object)</TargetSite>
+      <StackTrace>   at MS.Internal.Helper.FindResourceHelper.DoTryCatchWhen(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at MS.Internal.Helper.FindResourceHelper.TryCatchWhen()
+   at System.Windows.FrameworkElement.FindResource(Object resourceKey)
+   at Notification.Balloon..ctor(Control control, String caption, BalloonType balloonType, Double maxHeight, Boolean autoWidth) in d:\OneDrive\Programação\SIF\Notification\Balloon.xaml.cs:line 41
+   at SIF.Aplicacao.LayoutCadastroW.CadastroCaixas.GetNewCaixa() in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroCaixas.xaml.cs:line 78
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_GetNewRecordEventHandler() in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 285
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 147</StackTrace>
+    </PresentationFramework>
+  </Error>
+  <Error>
+    <DataHora>Data: 28/10/2015 Hora: 20:21:26</DataHora>
+    <PresentationFramework>
+      <Message>'InfoGradient' resource not found.</Message>
+      <TargetSite>System.Object DoTryCatchWhen(System.Object)</TargetSite>
+      <StackTrace>   at MS.Internal.Helper.FindResourceHelper.DoTryCatchWhen(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at MS.Internal.Threading.ExceptionFilterHelper.TryCatchWhen(Object source, Delegate method, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at MS.Internal.Helper.FindResourceHelper.TryCatchWhen()
+   at System.Windows.FrameworkElement.FindResource(Object resourceKey)
+   at Notification.Balloon..ctor(Control control, String caption, BalloonType balloonType, Double maxHeight, Boolean autoWidth) in d:\OneDrive\Programação\SIF\Notification\Balloon.xaml.cs:line 41
+   at SIF.Aplicacao.LayoutCadastroW.CadastroCaixas.GetNewCaixa() in d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroCaixas.xaml.cs:line 78
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_GetNewRecordEventHandler() in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 285
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 147</StackTrace>
+    </PresentationFramework>
+  </Error>
+</LogErros>

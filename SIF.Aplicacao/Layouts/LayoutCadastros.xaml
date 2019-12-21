@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="SIF.Aplicacao.Layouts.LayoutCadastros"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:imageIcon="clr-namespace:SIF.Aplicacao.Layouts"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             >
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="CADASTROS" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/cliente.png" Titulo="Clientes" MouseLeftButtonDown="Clientes_Click"/>
+                    <imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/caixas.png" Titulo="Caixas" MouseLeftButtonDown="Caixas_Click"/>
+                    <imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/formapagamento.png" Titulo="F.Pagamentos" MouseLeftButtonDown="FormasPgto_Click"/>
+                    <imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/planocontas.png" Titulo="Planos de Contas" MouseLeftButtonDown="PlanoContas_Click"/>
+                    <!--<imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/planocontas.png" Titulo="CUPOM FISCAL" MouseLeftButtonDown="CupomFiscal_Click"/>-->
+                </ListView>
+                <TextBlock Text="CONSULTAS" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Grid.Row="0" IconSource="/Icones/conscliente.png" Titulo="Consulta Clientes" MouseLeftButtonDown="ImageIcon_MouseLeftButtonDown_1"/>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

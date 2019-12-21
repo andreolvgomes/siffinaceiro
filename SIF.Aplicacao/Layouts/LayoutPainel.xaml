@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="SIF.Aplicacao.Layouts.LayoutPainel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:imageIcon="clr-namespace:SIF.Aplicacao.Layouts"
+             >
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="CADASTROS" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Titulo="Usuários" IconSource="/Icones/usuario.png" MouseLeftButtonDown="Usuarios_Click"/>
+                    <imageIcon:ImageIcon Titulo="Alterar Senha" IconSource="/Icones/alterarsenha.png" MouseLeftButtonDown="AlterarSenha_Click"/>
+                </ListView>
+                <TextBlock Text="CONTROLES" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                <Separator/>
+                <ListView Style="{StaticResource MyListView}">
+                    <imageIcon:ImageIcon Titulo="Configurações" IconSource="/Icones/configuracao.png" MouseLeftButtonDown="ImageIcon_MouseLeftButtonDown_1"/>
+                </ListView>
+                <StackPanel x:Name="stkBanco">
+                    <TextBlock Text="BANCO DE DADOS" Style="{StaticResource TextBlockHeading}" Margin="0,10,0,0"/>
+                    <Separator/>
+                    <ListView Style="{StaticResource MyListView}">
+                        <imageIcon:ImageIcon Titulo="Backup" IconSource="/Icones/backupbanco.png" MouseLeftButtonDown="Backup_Click"/>
+                        <imageIcon:ImageIcon Titulo="Resturar" IconSource="/Icones/restaurarbanco.png" MouseLeftButtonDown="RestauraBanco_Click"/>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

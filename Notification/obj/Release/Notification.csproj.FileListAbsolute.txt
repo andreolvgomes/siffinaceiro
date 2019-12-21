@@ -1,0 +1,15 @@
+D:\OneDrive\Programação\SIF\Notification\bin\Release\Notification.dll
+D:\OneDrive\Programação\SIF\Notification\bin\Release\Notification.pdb
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Balloon.baml
+D:\OneDrive\Programação\SIF\Notification\obj\Release\HelpBalloon.baml
+D:\OneDrive\Programação\SIF\Notification\obj\Release\ToastPopUp.baml
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Balloon.g.cs
+D:\OneDrive\Programação\SIF\Notification\obj\Release\HelpBalloon.g.cs
+D:\OneDrive\Programação\SIF\Notification\obj\Release\ToastPopUp.g.cs
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification_MarkupCompile.cache
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.g.resources
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.dll
+D:\OneDrive\Programação\SIF\Notification\obj\Release\Notification.pdb

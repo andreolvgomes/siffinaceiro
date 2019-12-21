@@ -1,0 +1,12 @@
+D:\OneDrive\Programação\SIF\RestoreDb\bin\Release\RestoreDb.exe.config
+D:\OneDrive\Programação\SIF\RestoreDb\bin\Release\RestoreDb.exe
+D:\OneDrive\Programação\SIF\RestoreDb\bin\Release\RestoreDb.pdb
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\MainWindow.baml
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\MainWindow.g.cs
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\App.g.cs
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb_MarkupCompile.cache
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb.g.resources
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb.exe
+D:\OneDrive\Programação\SIF\RestoreDb\obj\Release\RestoreDb.pdb

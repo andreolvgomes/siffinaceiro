@@ -1,0 +1,10 @@
+D:\OneDrive\Programação\SIF\SIF.Commom\bin\Release\SIF.Commom.dll
+D:\OneDrive\Programação\SIF\SIF.Commom\bin\Release\SIF.Commom.pdb
+D:\OneDrive\Programação\SIF\SIF.Commom\bin\Release\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Commom\bin\Release\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.g.resources
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.dll
+D:\OneDrive\Programação\SIF\SIF.Commom\obj\Release\SIF.Commom.pdb

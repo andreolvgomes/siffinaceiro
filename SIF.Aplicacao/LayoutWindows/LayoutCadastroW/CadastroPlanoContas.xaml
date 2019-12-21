@@ -1,0 +1,62 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutCadastroW.CadastroPlanoContas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        xmlns:local="clr-namespace:SIF.Aplicacao.UserControls"
+        Title="PLANO DE CONTAS" ShowInTaskbar="False" IsTitleVisible="True" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterOwner" SizeToContent="Height"
+        Width="700" ResizeMode="CanMinimize"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:Buttons x:Name="buttons" Grid.Row="0"/>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border x:Name="imgFoto" Grid.Column="0" BorderBrush="{StaticResource Accent}" BorderThickness="2" Height="174" Width="150" Padding="2">
+                    <Border.Background>
+                        <ImageBrush ImageSource="/Icones/planocontas.png"/>
+                    </Border.Background>
+                </Border>
+
+                <StackPanel Grid.Column="1" Margin="10">
+                    <TextBlock Text="{Binding Entidade.Pla_descricao}" FontSize="30" Style="{StaticResource StyleTextBlockResumo}"/>
+                    <TextBlock Text="{Binding Entidade.Pla_numeroconta}" FontSize="25" Style="{StaticResource StyleTextBlockResumo}"/>
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Margin="0,5,0,0">
+                <TextBlock Text="Nº Estrutura" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCodigo" Width="150" Text="{Binding Entidade.Pla_numeroconta, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"
+                         MaxLength="21" extenders:MaskTextBox.Mask="0.0.0.0.000.000.0000"/>
+
+                <TextBlock Text="Descrição" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtDescricao" Text="{Binding Entidade.Pla_descricao, UpdateSourceTrigger=PropertyChanged}" MaxLength="50   "/>
+
+                <!--<TextBlock Text="Movimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <ComboBox Width="150" HorizontalAlignment="Left">
+                    <ComboBoxItem Content="C - Crédito"/>
+                    <ComboBoxItem Content="D - Débito"/>
+                </ComboBox>-->
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</mui:ModernWindow>

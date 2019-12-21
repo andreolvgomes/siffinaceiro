@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA5911EB-F34B-4F8D-AB29-6B967ED0B8DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIF.Aplicacao</RootNamespace>
+    <AssemblyName>SIF - Sistema Financeiro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.andreoliver.esy.es/sistemas/sif/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.andreoliver.esy.es/sistemas/sif/</InstallUrl>
+    <ProductName>SIF - Sistema de Controle Financeiro</ProductName>
+    <PublisherName>Oliver Sistemas</PublisherName>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>sif.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.4</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BDFF172A69F6D2694EA9BD18058A26FC71FFA98C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SCPAplicacao_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commom\ControleJanelas.cs" />
+    <Compile Include="Commom\ControleWindowAberta.cs" />
+    <Compile Include="Commom\EffectWindow.cs" />
+    <Compile Include="ConfiguracaoInstanciaSQL\ContextInicial.cs" />
+    <Compile Include="ConfiguracaoInstanciaSQL\Navigate.xaml.cs">
+      <DependentUpon>Navigate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\Enums.cs" />
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\MyUserControl.cs" />
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.xaml.cs">
+      <DependentUpon>PassoConfiguracaoArquivoBanco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.xaml.cs">
+      <DependentUpon>PassoConfiguracaoISGBD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.xaml.cs">
+      <DependentUpon>PassoEscolhaArmazenamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.xaml.cs">
+      <DependentUpon>PassoFinalizacao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.xaml.cs">
+      <DependentUpon>PassosUsuarioSenha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ModelConsultas\FaturamentosPes.cs" />
+    <Compile Include="Delegates\ExecucaoCommandEventHandler.cs" />
+    <Compile Include="Delegates\ExecucaoCommandsCadastrosEventHandler.cs" />
+    <Compile Include="Delegates\ExecucaoCommandsComDaoSqlBooleanEventHandler.cs" />
+    <Compile Include="Delegates\ExecutacaoCommandsComDaoSqlModelEventHandler.cs" />
+    <Compile Include="Delegates\ExecutaCommandsBemSucedidaEventHandler.cs" />
+    <Compile Include="Delegates\ExecutaCommandsNotificacaoEventHandler.cs" />
+    <Compile Include="Delegates\MessageSplashDelegate.cs" />
+    <Compile Include="Delegates\ModelPesquisaEventHandler.cs" />
+    <Compile Include="Delegates\TextBoxSomenteIsReadOnlyEventhandler.cs" />
+    <Compile Include="Enums\CONSULTAS_SELECTED.cs" />
+    <Compile Include="Enums\ContasReceberPagar.cs" />
+    <Compile Include="Enums\PagamentoStatus.cs" />
+    <Compile Include="Enums\ResultadoPesquisa.cs" />
+    <Compile Include="Enums\TextBoxConsultas.cs" />
+    <Compile Include="Enums\TextBoxPesquisa.cs" />
+    <Compile Include="Enums\TipoFiltro.cs" />
+    <Compile Include="Enums\TipoPessoa.cs" />
+    <Compile Include="Extenders\RadioButtonEnum.cs" />
+    <Compile Include="FrenteCaixa\CupomFiscal.xaml.cs">
+      <DependentUpon>CupomFiscal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrenteCaixa\Item.cs" />
+    <Compile Include="FrenteCaixa\ProviderCupomFiscal.cs" />
+    <Compile Include="FrenteCaixa\Vendas.cs" />
+    <Compile Include="Helper\DataIncialFinal.cs" />
+    <Compile Include="Helper\DbExecutaScripts.cs" />
+    <Compile Include="Helper\LogException.cs" />
+    <Compile Include="Helper\ValoresBaixaC.cs" />
+    <Compile Include="Helper\XmlConfiguracaoInstancia.cs" />
+    <Compile Include="HelpJanela.xaml.cs">
+      <DependentUpon>HelpJanela.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracaoInstanciaSQL\InstanciaSQL.xaml.cs">
+      <DependentUpon>InstanciaSQL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IModelInterfaces.cs" />
+    <Compile Include="Interfaces\IProviders.cs" />
+    <Compile Include="LayoutWindows\LayoutCadastroW\CadastroCaixas.xaml.cs">
+      <DependentUpon>CadastroCaixas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutCadastroW\CadastroClientes.xaml.cs">
+      <DependentUpon>CadastroClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs">
+      <DependentUpon>CadastroFormaPgto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml.cs">
+      <DependentUpon>CadastroPlanoContas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutCadastroW\CadastroProdutos.xaml.cs">
+      <DependentUpon>CadastroProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutConfiguracoesW\ControlesSistema.xaml.cs">
+      <DependentUpon>ControlesSistema.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutConfiguracoesW\Configuracoes.xaml.cs">
+      <DependentUpon>Configuracoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\Comprovantes.xaml.cs">
+      <DependentUpon>Comprovantes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\Faturamento.xaml.cs">
+      <DependentUpon>Faturamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\AlteracaoSenha.xaml.cs">
+      <DependentUpon>AlteracaoSenha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\BancoBackup.xaml.cs">
+      <DependentUpon>BancoBackup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\CadastroUsuario.xaml.cs">
+      <DependentUpon>CadastroUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\ConfigDatabase.xaml.cs">
+      <DependentUpon>ConfigDatabase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\Node.cs" />
+    <Compile Include="LayoutWindows\LayoutPainelW\UsuarioPermissoes.xaml.cs">
+      <DependentUpon>UsuarioPermissoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutControle\ControleLayoutContasrp.cs" />
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\BaixaContas.xaml.cs">
+      <DependentUpon>BaixaContas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\BaixaFull.xaml.cs">
+      <DependentUpon>BaixaFull.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\Contasrp.xaml.cs">
+      <DependentUpon>Contasrp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutFinanceiroW\GeradorParcela.xaml.cs">
+      <DependentUpon>GeradorParcela.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.xaml.cs">
+      <DependentUpon>MovimentacaoFinan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutPainel.xaml.cs">
+      <DependentUpon>LayoutPainel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ImageIcon.xaml.cs">
+      <DependentUpon>ImageIcon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutInicio.xaml.cs">
+      <DependentUpon>LayoutInicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutMovimentacoes.xaml.cs">
+      <DependentUpon>LayoutMovimentacoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\EstruturaMensagem.cs" />
+    <Compile Include="ManagerWindow\ManagerWindowFactory.cs" />
+    <Compile Include="ManagerWindow\ManagerWindowState.cs" />
+    <Compile Include="ManagerWindow\WindowModelInstancia.cs" />
+    <Compile Include="ManagerWindow\ManagementWindowState.cs" />
+    <Compile Include="ModelInteface\GeradorParcelaModel.cs" />
+    <Compile Include="Msg.xaml.cs">
+      <DependentUpon>Msg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Enums.cs" />
+    <Compile Include="Consultas\IModelPesquisa.cs" />
+    <Compile Include="Consultas\ModelConsultas\CaixasPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\CamovimentosPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\ClientesPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\CrfinanceiroPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\FpagamentosPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\PlanoContasPes.cs" />
+    <Compile Include="Consultas\ModelConsultas\UsuariosPes.cs" />
+    <Compile Include="Consultas\EstruturaPesquisa.cs" />
+    <Compile Include="Providers\ProviderCadCaixas.cs" />
+    <Compile Include="Providers\ProviderFaturamento.cs" />
+    <Compile Include="Providers\ProviderInterfacesCadastros2.cs" />
+    <Compile Include="Providers\ProviderRecord.cs" />
+    <Compile Include="Providers\ProviderInterfacesCadastros.cs" />
+    <Compile Include="Providers\ContextoDb.cs" />
+    <Compile Include="Providers\DefinicoesUsuario.cs" />
+    <Compile Include="Providers\ProviderBaixaColetiva.cs" />
+    <Compile Include="Providers\ProviderBaixasContas.cs" />
+    <Compile Include="Providers\ProviderBancodados.cs" />
+    <Compile Include="Providers\ProviderCrp.cs" />
+    <Compile Include="Providers\ProviderGenerico.cs" />
+    <Compile Include="Providers\ProviderGeradorParcelas.cs" />
+    <Compile Include="Providers\ProviderDao.cs" />
+    <Compile Include="Providers\ProviderMovimentacaoFinan.cs" />
+    <Compile Include="Providers\ProviderUsuarios.cs" />
+    <Compile Include="SistemaGlobal.cs" />
+    <Compile Include="Splash.xaml.cs">
+      <DependentUpon>Splash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Structs\RetornoFuncao.cs" />
+    <Compile Include="UserControls\Buttons.xaml.cs">
+      <DependentUpon>Buttons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CadastroImageLogo.xaml.cs">
+      <DependentUpon>CadastroImageLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExecuteCommandDelegate.cs" />
+    <Compile Include="UserControls\LinhaCupom.xaml.cs">
+      <DependentUpon>LinhaCupom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Separador.xaml.cs">
+      <DependentUpon>Separador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TypeButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutCadastros.xaml.cs">
+      <DependentUpon>LayoutCadastros.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutFinanceiro.xaml.cs">
+      <DependentUpon>LayoutFinanceiro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LayoutPainelMenu.xaml.cs">
+      <DependentUpon>LayoutPainelMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutWindows\LayoutPainelW\AparenciaOps.xaml.cs">
+      <DependentUpon>AparenciaOps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Providers\SettingsAppearanceViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ConfiguracaoInstanciaSQL\Navigate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FrenteCaixa\CupomFiscal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fundo\ModernUI.BingImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Fundo\ModernUI.HelloKitty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Fundo\ModernUI.Love.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Fundo\ModernUI.Snowflakes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HelpJanela.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ConfiguracaoInstanciaSQL\InstanciaSQL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutCadastroW\CadastroCaixas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutCadastroW\CadastroClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutCadastroW\CadastroPlanoContas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutCadastroW\CadastroProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutConfiguracoesW\ControlesSistema.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutConfiguracoesW\Configuracoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\Comprovantes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\Faturamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\AlteracaoSenha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\BancoBackup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\CadastroUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\ConfigDatabase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\UsuarioPermissoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\BaixaContas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\BaixaFull.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\Contasrp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutFinanceiroW\GeradorParcela.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutPainel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\ImageIcon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutCadastros.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutFinanceiro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutInicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutMovimentacoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\LayoutPainelMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayoutWindows\LayoutPainelW\AparenciaOps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Msg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\GroupBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\IUStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\RadioButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\StylesDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\CadastroImageLogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LinhaCupom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Separador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\produtos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fundo\background.kitty.png" />
+    <Resource Include="Fundo\background.love.jpg" />
+    <Resource Include="Fundo\background.snowflakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\fotocliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\produtoimg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\contaspagar.png" />
+    <Resource Include="Icones\contasreceber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\conscliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\produtoimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\caixas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Notification\Notification.csproj">
+      <Project>{5966439c-a414-42f5-b58a-d6b161fa3b98}</Project>
+      <Name>Notification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.PesquisaViewSP\SIF.PesquisaViewSP.csproj">
+      <Project>{dfba6593-3383-4ee9-b46c-ac5e218263b3}</Project>
+      <Name>SIF.PesquisaViewSP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.WPF.Styles\SIF.WPF.Styles.csproj">
+      <Project>{9a653a28-fe46-40e8-a14f-48b0e325165d}</Project>
+      <Name>SIF.WPF.Styles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.Commom\SIF.Commom.csproj">
+      <Project>{1f1dfc4d-83c7-45e7-9497-a0d55f7b2984}</Project>
+      <Name>SIF.Commom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.Dao\SIF.Dao.csproj">
+      <Project>{df23c1d7-5f44-4262-934f-ddbc2707e1d4}</Project>
+      <Name>SIF.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.Model\SIF.Model.csproj">
+      <Project>{48d2bd07-6f91-419c-8cd0-2ce188434c3f}</Project>
+      <Name>SIF.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.PesquisaView\SIF.PesquisaView.csproj">
+      <Project>{d38a7cb8-1501-4feb-af0a-1797a11b049c}</Project>
+      <Name>SIF.PesquisaView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SIF.Pesquisa\SIF.Pesquisa.csproj">
+      <Project>{4e1b3574-e814-4f6f-b377-2b3ae0359e1e}</Project>
+      <Name>SIF.Pesquisa</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\contaspagarbaixada.png" />
+    <Resource Include="Icones\contasreceberbaixada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\geradorparcelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\configuracao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\formapagamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\planocontas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Link.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\alterarsenha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\baixacontaspagar.png" />
+    <Resource Include="Icones\baixacontasreceber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\movimentacaofinan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\backupbanco.png" />
+    <Resource Include="Icones\restaurarbanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\baixafull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icones\faturamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\produto1.jpg" />
+    <Resource Include="Images\produto2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

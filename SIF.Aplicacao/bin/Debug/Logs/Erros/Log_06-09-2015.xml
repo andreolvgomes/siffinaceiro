@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:00:23</DataHora>
+    <SIF.Dao>
+      <Message>Referência de objeto não definida para uma instância de um objeto.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 431
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:00:34</DataHora>
+    <SIF.Dao>
+      <Message>Referência de objeto não definida para uma instância de um objeto.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 431
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:00:42</DataHora>
+    <SIF.Dao>
+      <Message>Referência de objeto não definida para uma instância de um objeto.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 431
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:00:59</DataHora>
+    <SIF.Dao>
+      <Message>Referência de objeto não definida para uma instância de um objeto.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 431
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:01:34</DataHora>
+    <SIF.Dao>
+      <Message>Referência de objeto não definida para uma instância de um objeto.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 431
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+  <Error>
+    <DataHora>Data: 06/09/2015 Hora: 20:04:28</DataHora>
+    <SIF.Dao>
+      <Message>Conversão especificada não é válida.</Message>
+      <TargetSite>T GetValue[T](System.String, System.Data.SqlClient.SqlCommand)</TargetSite>
+      <StackTrace>   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, SqlCommand command) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 429
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String nomeCampo, String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 391
+   em SIF.Dao.ConnectionDbAbstract.GetValue[T](String commandText) na d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ConnectionDbAbstract.cs:linha 366
+   em SIF.Aplicacao.LayoutCadastroW.CadastroFormaPgto.Validacao(Fpagamentos model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.xaml.cs:linha 102
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ValidacaoCamposCorrenteEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 291
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 164</StackTrace>
+    </SIF.Dao>
+  </Error>
+</LogErros>

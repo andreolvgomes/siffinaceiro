@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="SIF.Aplicacao.ConfiguracaoInstanciaSQL.UserControlPassos.PassosUsuarioSenha"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             >
+    <UserControl.Resources>
+        <converters:BooleanToVisibilityConverterInvert x:Key="booleanToVisibilityConverterInvert"/>
+        <converters:BooleanToInvert x:Key="booleanToInvert"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <CheckBox x:Name="chkUserExist" Grid.Row="0" Content="Já tenho usuário cadastrado" IsChecked="{Binding UsuarioSisExists}"/>
+
+        <StackPanel Grid.Row="1" IsEnabled="{Binding ElementName=chkUserExist, Path=IsChecked, Converter={StaticResource booleanToInvert}}">
+            <TextBlock Text="Usuário" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <TextBox x:Name="txtUsuario" Text="{Binding UsuarioSis, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Senha" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <PasswordBox x:Name="txtSenha"/>
+            <TextBlock Text="Senha(Confirmação)" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <PasswordBox x:Name="txtSenhaConfirmacao"/>
+        </StackPanel>
+        
+        <TextBlock Grid.Row="2" Text="Defina o USUÁRIO e SENHA para acessar o Sistema." TextWrapping="Wrap" Foreground="Red" Margin="0,10,0,10" VerticalAlignment="Bottom"
+                   Visibility="{Binding ElementName=chkUserExist, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverterInvert}}"/>
+    </Grid>
+</UserControl>

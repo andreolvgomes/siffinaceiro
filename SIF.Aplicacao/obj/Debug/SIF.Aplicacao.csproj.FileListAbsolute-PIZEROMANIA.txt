@@ -1,0 +1,139 @@
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe.config
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe.manifest
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.application
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\Notification.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Commom.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Dao.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Pesquisa.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.PesquisaView.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.PesquisaViewSP.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\EditorSQL.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\Microsoft.Data.Schema.ScriptDom.Sql.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\Microsoft.Data.Schema.ScriptDom.dll
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.PesquisaViewSP.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.xml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\Notification.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Commom.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Dao.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.PesquisaView.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF.Pesquisa.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\EditorSQL.pdb
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Menu.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.BingImage.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.HelloKitty.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.Love.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.Snowflakes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\HelpJanela.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\Configuracoes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Comprovantes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Faturamento.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\ConfigDatabase.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaFull.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\GeradorParcela.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\ImageIcon.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutInicio.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainelMenu.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AparenciaOps.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Login.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Msg.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Splash.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Styles\GroupBoxStyle.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Styles\IUStyles.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Styles\RadioButtonStyle.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Styles\StylesDictionary.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Styles\TextBlockStyle.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\Buttons.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\CadastroImageLogo.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\LinhaCupom.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\Separador.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\App.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\Navigate.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\FrenteCaixa\CupomFiscal.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Menu.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\HelpJanela.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\InstanciaSQL.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroCaixas.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroClientes.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroProdutos.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\ControlesSistema.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\Configuracoes.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Comprovantes.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Faturamento.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AlteracaoSenha.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\BancoBackup.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\CadastroUsuario.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\ConfigDatabase.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\UsuarioPermissoes.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaContas.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaFull.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Contasrp.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\GeradorParcela.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainel.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\ImageIcon.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutCadastros.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutFinanceiro.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutInicio.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutMovimentacoes.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainelMenu.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AparenciaOps.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Login.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Msg.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Splash.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\Buttons.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\CadastroImageLogo.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\LinhaCupom.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\UserControls\Separador.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\App.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro_MarkupCompile.cache
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro_MarkupCompile.lref
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\Navigate.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\FrenteCaixa\CupomFiscal.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\InstanciaSQL.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroCaixas.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroClientes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroProdutos.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\ControlesSistema.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AlteracaoSenha.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\BancoBackup.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\CadastroUsuario.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\UsuarioPermissoes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaContas.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Contasrp.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainel.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutCadastros.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutFinanceiro.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\Layouts\LayoutMovimentacoes.baml
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.g.resources
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe.manifest
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.application
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe
+D:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.pdb
+G:\OneDrive\Programação\SIF\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe.config
+G:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe
+G:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.pdb

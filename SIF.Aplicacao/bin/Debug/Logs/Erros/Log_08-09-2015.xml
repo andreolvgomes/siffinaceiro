@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:16:44</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void ProcessoExclusaoBaixa(SIF.Crbaixas)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.Providers.ProviderBaixasContas.ProcessoExclusaoBaixa(Crbaixas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderBaixasContas.cs:line 128
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ExecutandoDeleteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 299
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 190</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:16:47</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void ProcessoExclusaoBaixa(SIF.Crbaixas)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.Providers.ProviderBaixasContas.ProcessoExclusaoBaixa(Crbaixas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderBaixasContas.cs:line 128
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ExecutandoDeleteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 299
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 190</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:16:49</DataHora>
+    <SIF>
+      <Message>Object reference not set to an instance of an object.</Message>
+      <TargetSite>Void ProcessoExclusaoBaixa(SIF.Crbaixas)</TargetSite>
+      <StackTrace>   at SIF.Aplicacao.Providers.ProviderBaixasContas.ProcessoExclusaoBaixa(Crbaixas model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderBaixasContas.cs:line 128
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ExecutandoDeleteEventHandler(T model) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 299
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 190</StackTrace>
+    </SIF>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:16:52</DataHora>
+    <mscorlib>
+      <Message>Non-static method requires a target.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 289
+   at SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 278
+   at SIF.Dao.ProviderDbDAORecords2`1.Delete(T model) in d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ProviderDbDAORecords2.cs:line 229
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 191</StackTrace>
+    </mscorlib>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:16:58</DataHora>
+    <mscorlib>
+      <Message>Non-static method requires a target.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 289
+   at SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 278
+   at SIF.Dao.ProviderDbDAORecords2`1.Delete(T model) in d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ProviderDbDAORecords2.cs:line 229
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 191</StackTrace>
+    </mscorlib>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:17:00</DataHora>
+    <mscorlib>
+      <Message>Non-static method requires a target.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 289
+   at SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 278
+   at SIF.Dao.ProviderDbDAORecords2`1.Delete(T model) in d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ProviderDbDAORecords2.cs:line 229
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 191</StackTrace>
+    </mscorlib>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:17:02</DataHora>
+    <mscorlib>
+      <Message>Non-static method requires a target.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 289
+   at SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 278
+   at SIF.Dao.ProviderDbDAORecords2`1.Delete(T model) in d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ProviderDbDAORecords2.cs:line 229
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 191</StackTrace>
+    </mscorlib>
+  </Error>
+  <Error>
+    <DataHora>Data: 08/09/2015 Hora: 20:17:06</DataHora>
+    <mscorlib>
+      <Message>Non-static method requires a target.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 289
+   at SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) in d:\OneDrive\Programação\SIF\SIF.Dao\CreateCommandsSql2.cs:line 278
+   at SIF.Dao.ProviderDbDAORecords2`1.Delete(T model) in d:\OneDrive\Programação\SIF\SIF.Dao\Abstracts\ProviderDbDAORecords2.cs:line 229
+   at SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) in d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:line 191</StackTrace>
+    </mscorlib>
+  </Error>
+</LogErros>

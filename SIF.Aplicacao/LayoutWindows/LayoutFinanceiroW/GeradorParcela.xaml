@@ -1,0 +1,105 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutFinanceiroW.GeradorParcela"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        Title="GERADOR DE PARCELAS" ShowInTaskbar="False" IsTitleVisible="True" Style="{StaticResource BlankWindow}" 
+        SizeToContent="Height" WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize" >
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Cliente/Fornecedor" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCliente" Grid.Row="1" Text="{Binding Cliente.Cli_nome, UpdateSourceTrigger=PropertyChanged}" PreviewKeyDown="TextBox_PreviewKeyDown"
+                          MaxLength="50"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Nº documento  " Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtNdocumento" Grid.Row="1" Grid.Column="0" Text="{Binding ContextoInformacao.NumeroDocumento, UpdateSourceTrigger=PropertyChanged}"
+                         PreviewKeyDown="TextBox_PreviewKeyDown" MaxLength="20"/>
+                
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Forma de pagamento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtFpagamento" Grid.Row="1" Grid.Column="1" Text="{Binding Fpagamento.Fpa_descricao, UpdateSourceTrigger=PropertyChanged}"
+                         PreviewKeyDown="TextBox_PreviewKeyDown" MaxLength="30"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Financeiro" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <ComboBox x:Name="cmbFinanceiro" Grid.Row="1" Grid.Column="2" ItemsSource="{Binding Financeiro}" SelectedValue="{Binding ContextoInformacao.FinanceiroSelecionado}"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Valor Total" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <extenders:TextBoxDecimal x:Name="txtValor" Grid.Row="1" Grid.Column="0" Text="{Binding ContextoInformacao.ValorTotal, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource StyleTextBox}"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Qt Parcela    " Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtQtParcelas" Grid.Row="1" Grid.Column="1" Text="{Binding ContextoInformacao.QuantidadeParcelas, UpdateSourceTrigger=PropertyChanged}" MaxLength="10"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Data Vencimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtVencimento" extenders:MaskTextBox.Mask="00/00/0000" Grid.Row="1" Grid.Column="2" Text="{Binding ContextoInformacao.DataVencimento, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="Plano de Contas" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtPlanoContas" Grid.Row="1" Grid.Column="3" Text="{Binding PlanoConta.Pla_numeroconta, UpdateSourceTrigger=PropertyChanged}"
+                         PreviewKeyDown="TextBox_PreviewKeyDown" extenders:MaskTextBox.Mask="0.0.0.0.000.000.0000" MaxLength="20"/>
+            </Grid>
+            <TextBlock Grid.Row="0" Text="Observação" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <TextBox Grid.Row="1" Text="{Binding ContextoInformacao.Observacao, UpdateSourceTrigger=PropertyChanged}" MaxLength="200"/>
+            <GroupBox Header="Funções" Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <Button Width="150" Margin="1" Content="Visualizar" Click="Visualizar_Click"/>
+                        <Button Width="150" Margin="1" Content="Gerar e Salvar" Click="GerarParcelas_Click"/>
+                    </StackPanel>
+                    
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right">
+                        <CheckBox Content="Mesmo dia de vencimento para todas as parcelas?" IsChecked="{Binding DiaVencimentoFixo}"/>
+                        <!--<CheckBox Content="Informar valor da parcela ou valor total?" IsChecked="{Binding DiaVencimentoFixo}"/>-->
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" Margin="0,5,0,0" ItemsSource="{Binding Parcelas}" AutoGenerateColumns="False" Height="300">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nº Parcela" Width="100" Binding="{Binding Crf_parcela}"/>
+                <DataGridTextColumn Header="Valor" Width="150" Binding="{Binding Crf_valorparcela, StringFormat={}{0:N2}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Data vencimento" Width="150" Binding="{Binding Crf_datavencimento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Observação" Width="*" Binding="{Binding Crf_observacao}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    
+</mui:ModernWindow>

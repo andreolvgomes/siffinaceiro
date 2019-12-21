@@ -1,0 +1,147 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutWindows.LayoutFinanceiroW.Faturamento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+        IsTitleVisible="True" Style="{StaticResource BlankWindow}" Title="FATURAMENTOS" SizeToContent="Height" WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <converters:ConvertBooleanZeroTrueOneFalse x:Key="convertBooleanZeroTrueOneFalse"/>
+        <converters:BooleanToInvert x:Key="booleanToInvert"/>
+    </Window.Resources>
+    <StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <TextBlock Text="Nº Fatura" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <extenders:TextBoxInteger x:Name="txtFat_sequencial" Width="75" HorizontalAlignment="Left" Text="{Binding Faturamentos.Fat_sequencialString, UpdateSourceTrigger=PropertyChanged}"
+                         PreviewKeyDown="Consulta_PreviewKeyDown" ToolTip="Informe o número de um Faturamento e pressione Enter ou busque na grade de consulta pressionando F2" LostKeyboardFocus="txtFat_sequencial_LostKeyboardFocus_1" MaxLength="5"
+                         />
+            </StackPanel>
+            <TextBlock Grid.Column="1" Text="{Binding Faturamentos.Fat_totfatura, StringFormat={}{0:C}, ConverterCulture=pt-br}" Foreground="Green" FontSize="40" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                       ToolTip="Valor total de todas as contas lançadas"/>
+        </Grid>
+        <Separator Background="Gray" Height="10"/>
+        <StackPanel Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Cliente" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCli_nome" Grid.Row="1" Grid.Column="0" PreviewKeyDown="Consulta_PreviewKeyDown"
+                         Text="{Binding Faturamentos.Cli_nomeString, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding FaturamentoIniciada, Mode=TwoWay, Converter={StaticResource booleanToInvert}}"
+                         ToolTip="Informe o nome do Cliente/Fornecedor/Credor e pressione Enter ou busque na grade de consulta pressionando F2"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Financeiro" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <ComboBox x:Name="cmbFinanceiro" Grid.Row="1" Grid.Column="1" Width="200" ItemsSource="{Binding Financeiro}" SelectedValue="{Binding FinanceiroSelected, UpdateSourceTrigger=PropertyChanged}"
+                          IsEnabled="{Binding FaturamentoIniciada, Converter={StaticResource booleanToInvert}}" ToolTip="Escolha um tipo de Financeiro(Contas a Receber ou Contas a Pagar)"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44"/>
+                    <ColumnDefinition Width="35"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Nº Sequencial" Style="{StaticResource StyleTextBlockTitulo}" Grid.ColumnSpan="2"/>
+                <extenders:TextBoxInteger x:Name="txtCrf_sequencial" Grid.Row="1" Grid.Column="0" MaxLength="5" PreviewKeyDown="Consulta_PreviewKeyDown"
+                                 Text="{Binding Conta.Crf_sequencialString, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"
+                         ToolTip="Informe o número da Conta e pressione Enter ou busque na grade de consulta pressionando F2"/>
+
+                <!--<TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding Conta.NomeCliente, UpdateSourceTrigger=PropertyChanged}" Foreground="Red" FontWeight="Bold" FontSize="15" VerticalAlignment="Center" Margin="5,2,0,2"/>-->
+
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="R$ Valor" Style="{StaticResource StyleTextBlockTitulo}" TextAlignment="Right"/>
+                <TextBox x:Name="txtValor"  IsReadOnly="True" Grid.Row="1" Grid.Column="3" Width="100" Style="{StaticResource StyleTextBox}" Focusable="True"
+                                               Text="{Binding Conta.Crf_valorparcela, StringFormat={}{0:N2}, ConverterCulture=pt-br}" TextAlignment="Right" ToolTip="Valor da Conta"
+                                 PreviewKeyDown="txtValor_PreviewKeyDown_1"/>
+            </Grid>
+            <DataGrid x:Name="dgvContas" Height="150" ItemsSource="{Binding ListContas}" AutoGenerateColumns="False" ToolTip="Lista de Contas lançadas">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nº Sequencial" Binding="{Binding Crf_sequencial}"/>
+                    <DataGridTextColumn Header="Nº Documento" Binding="{Binding Crf_ndocumento}"/>
+                    <!--<DataGridTextColumn Header="Cliente" Binding="{Binding NomeCliente}" Width="150"/>-->
+                    <DataGridTextColumn Header="Dt.Documento" Binding="{Binding Crf_datalancamento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                    <DataGridTextColumn Header="Dt.Vencimento" Binding="{Binding Crf_datavencimento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                    <DataGridTextColumn Header="Valor" Binding="{Binding Crf_valorparcela, StringFormat={}{0:N2}, ConverterCulture=pt-br}"/>
+                    <DataGridTextColumn Header="Observação" Binding="{Binding Crf_observacao}" MinWidth="400"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+        <Separator Background="Gray" Height="10"/>
+
+        <StackPanel Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="F.Pagamento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtFpa_descricao" Grid.Row="1" Grid.Column="0" MaxLength="30" Text="{Binding Lancamento.DescricaoFpagamento, UpdateSourceTrigger=PropertyChanged}"
+                                  PreviewKeyDown="Consulta_PreviewKeyDown" ToolTip="Informe a descrição da Forma de Pagamento e pressione Enter ou busque na grade de consulta pressionando F2"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Plano de Contas" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtPla_numeroconta" Grid.Row="1" Grid.Column="1" extenders:MaskTextBox.Mask="0.0.0.0.000.000.0000" Text="{Binding Lancamento.Pla_numeroconta, UpdateSourceTrigger=PropertyChanged}"
+                                  PreviewKeyDown="Consulta_PreviewKeyDown" ToolTip="Informe o número do Plano de Contas e pressione Enter ou busque na grade de consulta pressionando F2"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Nº Documento " Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCrf_ndocumento" Grid.Row="1" Grid.Column="2" MaxLength="20" Text="{Binding Lancamento.Crf_ndocumento, UpdateSourceTrigger=PropertyChanged}" GotKeyboardFocus="txtCrf_ndocumento_GotKeyboardFocus_1"
+                         ToolTip="Número do documento da nova Conta"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="Dt.Vencimento" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox Grid.Row="1" Grid.Column="3" extenders:MaskTextBox.Mask="00/00/0000" Text="{Binding Lancamento.Vencimento, UpdateSourceTrigger=PropertyChanged}" GotKeyboardFocus="TextBox_GotKeyboardFocus_1"
+                         ToolTip="Data de vencimento da nova Conta"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="4" Text="Parc " Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox Grid.Row="1" Grid.Column="4" MaxLength="2" Text="{Binding Lancamento.Crf_parcela, UpdateSourceTrigger=PropertyChanged}" GotKeyboardFocus="TextBox_GotKeyboardFocus_2"
+                         ToolTip="Número da parcela da nova Conta"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="5" Text="R$ Valor " Style="{StaticResource StyleTextBlockTitulo}" TextAlignment="Right"/>
+                <extenders:TextBoxDecimal x:Name="txtValorParcela" Grid.Row="1" Grid.Column="5" Style="{StaticResource StyleTextBox}" Text="{Binding Lancamento.ValorAReceber, UpdateSourceTrigger=PropertyChanged}" Width="100"
+                                               PreviewKeyDown="TextBoxValorLacamentol_PreviewKeyDown" GotKeyboardFocus="TextBoxDecimal_GotKeyboardFocus_1" ToolTip="Valor da parcela da nova Conta"/>
+            </Grid>
+            
+            <TextBlock Text="Observação" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <TextBox Height="40" ScrollViewer.VerticalScrollBarVisibility="Visible" AcceptsReturn="True" Text="{Binding Lancamento.Crf_observacao, UpdateSourceTrigger=PropertyChanged}"/>
+            
+            <DataGrid x:Name="dgvLacamentos" Height="150" ItemsSource="{Binding ListLancamentos}" AutoGenerateColumns="False" ToolTip="Novas Contas">
+                <DataGrid.Columns>
+                    <!--<DataGridTextColumn Header="Nº Sequêncial" Binding="{Binding Crf_sequencial}"/>-->
+                    <DataGridTextColumn Header="Nº Documento" Binding="{Binding Crf_ndocumento}"/>
+                    <DataGridTextColumn Header="Dt.Vencimento" Binding="{Binding Crf_datavencimento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                    <DataGridTextColumn Header="Valor" Binding="{Binding Crf_valorparcela, StringFormat={}{0:N2}, ConverterCulture=pt-br}" Width="150"/>
+                    <DataGridTextColumn Header="Observação" Binding="{Binding Crf_observacao}" MinWidth="400"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <Separator Background="Gray" Margin="0,2,0,0"/>
+        <StackPanel Orientation="Horizontal" Margin="5">            
+            <Button Width="170" Height="24" Content="Salvar Faturamento" Click="SalvarFaturamento_Click" ToolTip="Salva o Faturamento corrente"/>
+            <Button Width="170" Height="24" Content="Excluir Faturamento" Click="ExcluirFaturamento_Click" ToolTip="Excluir o Faturamento corrente"/>
+            <Button Width="170" Height="24" Content="Novo Faturamento" Click="NovoFaturamento_Click" ToolTip="Iniciar um novo Faturamento"/>
+        </StackPanel>
+    </StackPanel>
+</mui:ModernWindow>

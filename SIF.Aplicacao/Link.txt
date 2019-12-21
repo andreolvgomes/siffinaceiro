@@ -1,0 +1,44 @@
+﻿http://www.infragistics.com/community/blogs/curtis_taylor/archive/2009/06/05/wpf-panels-and-the-aqua-workspace-panel.aspx
+
+controle de usuário
+
+http://coluce.wordpress.com/2012/04/19/controle-de-usuario/
+http://coluce.wordpress.com/2012/04/30/controle-de-usuario-parte-02/
+http://coluce.wordpress.com/2012/05/14/controle-de-usuario-parte-03/
+
+criptografia assimetrica
+http://0fx66.com/blog/criptografia-rsa-algoritmos-e-implementacoes/
+
+
+SELECT db_name(dbid) AS [Base Datos],
+count(dbid) AS [Nro. Conexiones],
+loginame AS [Usuario]
+FROM sys.sysprocesses
+WHERE [dbid] > 0 and db_name(dbid) = 'BDSIF'
+GROUP BY [dbid], [loginame]
+
+USE master
+GO
+ 
+SET NOCOUNT ON
+DECLARE @DBName varchar(50)
+DECLARE @spidstr varchar(8000)
+DECLARE @ConnKilled smallint
+SET @ConnKilled=0
+SET @spidstr = ''
+ 
+Set @DBName = 'DATABASE_NAME_HERE'
+IF db_id(@DBName) < 4
+BEGIN
+PRINT 'Connections to system databases cannot be killed'
+RETURN
+END
+SELECT @spidstr=coalesce(@spidstr,',' )+'kill '+convert(varchar, spid)+ '; '
+FROM master..sysprocesses WHERE dbid=db_id(@DBName)
+ 
+IF LEN(@spidstr) > 0
+BEGIN
+EXEC(@spidstr)
+SELECT @ConnKilled = COUNT(1)
+FROM master..sysprocesses WHERE dbid=db_id(@DBName)
+END

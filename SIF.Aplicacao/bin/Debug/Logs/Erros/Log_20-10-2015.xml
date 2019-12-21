@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 20/10/2015 Hora: 11:23:50</DataHora>
+    <mscorlib>
+      <Message>Cadeia de caracteres não foi reconhecida como DateTime válido.</Message>
+      <TargetSite>System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)</TargetSite>
+      <StackTrace>   em System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   em System.Convert.ToDateTime(String value)
+   em SIF.Aplicacao.ProviderCrp.SetTrocaValoresInterfaceToBase(Crfinanceiro model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderCrp.cs:linha 160
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_TrocaValoresInterfaceToBaseSalvandoEventHandler(T model) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 269
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na d:\OneDrive\Programação\SIF\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 152</StackTrace>
+    </mscorlib>
+  </Error>
+</LogErros>

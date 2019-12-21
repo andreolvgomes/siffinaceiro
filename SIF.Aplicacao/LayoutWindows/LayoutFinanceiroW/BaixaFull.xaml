@@ -1,0 +1,194 @@
+﻿<mui:ModernWindow x:Class="SIF.Aplicacao.LayoutFinanceiroW.BaixaFull"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:commom="clr-namespace:SIF.Commom;assembly=SIF.Commom"
+        xmlns:converters="clr-namespace:SIF.Commom.Converters;assembly=SIF.Commom"
+        xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+        IsTitleVisible="True" Style="{StaticResource BlankWindow}" Title="BAIXA - VISÃO GERAL" WindowStartupLocation="CenterOwner" WindowState="Maximized"
+        >
+    <Window.Resources>
+        <converters:ConvertDataGridRowBaixaFull x:Key="convertDataGridRowBaixaFull"/>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <GroupBox Header="Financeiro">
+                        <StackPanel>
+                            <extenders:RadioButtonEnum Content="Contas a Receber" EnumBinding="{Binding Financeiro}" EnumValue="ContasReceber" Style="{StaticResource StyleRadioButton}"
+                                            ToolTip="Lista as Contas a Receber"/>
+                            <extenders:RadioButtonEnum Content="Contas a Pagar" EnumBinding="{Binding Financeiro}" EnumValue="ContasPagar" Style="{StaticResource StyleRadioButton}" Margin="0,5,0,0"
+                                            ToolTip="Lista as Contas a Pagar"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Header="Filtro">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <extenders:RadioButtonEnum Content="Todas" EnumBinding="{Binding Filtro}" EnumValue="Todas" Style="{StaticResource StyleRadioButton}"
+                                                        ToolTip="Lista todas as contas"/>
+                                <extenders:RadioButtonEnum Content="Do mês e vencidas" EnumBinding="{Binding Filtro}" EnumValue="DoMesEvencidas" Style="{StaticResource StyleRadioButton}" Margin="0,5,0,0"
+                                                        ToolTip="Lista as contas do mês e vencidas"/>
+                                <extenders:RadioButtonEnum x:Name="rdPorData" Content="Por data" EnumBinding="{Binding Filtro}" EnumValue="PorData" Style="{StaticResource StyleRadioButton}" Margin="0,5,0,0"/>
+                                <!--<commom:RadioButtonEnum x:Name="rdEmPagamento" Content="Em pagamento" EnumBinding="{Binding Filtro}" EnumValue="EmPagamento" Style="{StaticResource StyleRadioButton}" Margin="0,5,0,0"
+                                                ToolTip="Lista todas as contas que saíram para pagamento"/>-->
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Margin="5,0,0,0">
+                                <extenders:RadioButtonEnum Content="Vencidas" EnumBinding="{Binding Filtro}" EnumValue="SomenteVencidas" Style="{StaticResource StyleRadioButton}"
+                                                        ToolTip="Lista as contas vencidas"/>
+                                <extenders:RadioButtonEnum Content="Do mês" EnumBinding="{Binding Filtro}" EnumValue="SomenteDoMes" Style="{StaticResource StyleRadioButton}" Margin="0,5,0,0"
+                                                        ToolTip="Lista as contas do mês, vencidas ou não"/>
+                                <CheckBox Content="Por Cli/For" Margin="0,5,0,0" Checked="CheckBox_Checked_1" IsChecked="{Binding EspecificarCliente}"/>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Data" IsEnabled="{Binding ElementName=rdPorData, Path=IsChecked}" Width="200">
+                        <StackPanel>
+                            <TextBlock Text="Data incial" Style="{StaticResource StyleTextBlockTitulo}"/>
+                            <DatePicker SelectedDate="{Binding ControleData.DataInicial, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBlock Text="Data final" Style="{StaticResource StyleTextBlockTitulo}"/>
+                            <DatePicker SelectedDate="{Binding ControleData.DataFinal, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </GroupBox>
+                    <!--<GroupBox Header="Em andamento (STATUS)">
+                        <StackPanel>
+                            <extenders:RadioButtonEnum Content="Todas" EnumBinding="{Binding StatusPagamento}" EnumValue="Todas" Style="{StaticResource StyleRadioButton}"
+                                                Margin="0,0,0,5" ToolTip="Lista as contas independente se sairam ou não para pagamento"/>
+
+                            <extenders:RadioButtonEnum Content="Pagamento(Andamento)" EnumBinding="{Binding StatusPagamento}" EnumValue="Pagamento_andamento" Style="{StaticResource StyleRadioButton}"
+                                                Margin="0,0,0,5" ToolTip="Lista as contas que sairam para pagamento"/>
+                            <extenders:RadioButtonEnum Content="Pagamento(Pendente)" EnumBinding="{Binding StatusPagamento}" EnumValue="Pagamento_pendente" Style="{StaticResource StyleRadioButton}"
+                                                    ToolTip="Lista as contas que ainda não sairam para pagamento"/>
+                        </StackPanel>
+                    </GroupBox>-->
+                    <GroupBox Header="Resumo em valores" Width="300">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Total GERAL    ..:" Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Bottom"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding ResumoValores.TotalGeral, StringFormat={}{0:N2}, ConverterCulture=pt-br}" Foreground="Blue" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right"/>
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Total vencidas ..:" Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Bottom"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ResumoValores.TotalVencidas, StringFormat={}{0:N2}, ConverterCulture=pt-br}" Foreground="Red" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right"/>
+
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Total em dias  ..:" Style="{StaticResource StyleTextBlockTitulo}" VerticalAlignment="Bottom"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ResumoValores.TotalEmDias, StringFormat={}{0:N2}, ConverterCulture=pt-br}" Foreground="Gray" FontSize="20" FontWeight="Bold" HorizontalAlignment="Right"/>
+                        </Grid>
+                    </GroupBox>                    
+                </StackPanel>
+
+                <Grid Grid.Column="1" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0" Content="Baixar - F5" Width="150" Click="Baixar_Click"/>
+                    <Button Grid.Row="1" Grid.Column="0" Content="Pesquisar" Width="150" Click="Button_Click_1"/>
+                    <Button Grid.Row="2" Grid.Column="0" Content="Editar" Width="150" Click="Editar_Click"/>
+                </Grid>
+            </Grid>            
+            <StackPanel Grid.Row="1" Visibility="{Binding EspecificarCliente, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Text="Cliente/Fornecedor" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtCliente" Text="{Binding NomeCliente, UpdateSourceTrigger=PropertyChanged}" PreviewKeyDown="txtCliente_PreviewKeyDown_1"/>
+            </StackPanel>
+        </Grid>
+
+        <DataGrid x:Name="dgvContas" Grid.Row="1" ItemsSource="{Binding Contas}" AutoGenerateColumns="False" SelectionMode="Single" SelectionUnit="FullRow" CanUserAddRows="False" PreviewKeyDown="DataGrid_PreviewKeyDown_1"
+                  >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Ellipse Height="20" Width="20" Fill="{Binding Crf_datavencimento, Converter={StaticResource convertDataGridRowBaixaFull}}">
+                                <Ellipse.Effect>
+                                    <DropShadowEffect BlurRadius="20" ShadowDepth="2"/>
+                                </Ellipse.Effect>
+                            </Ellipse>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Seq" Binding="{Binding Crf_sequencial}"/>
+                <DataGridTextColumn Header="Nº documento" Binding="{Binding Crf_ndocumento}"/>
+
+                <!--<DataGridTemplateColumn Header="Em pagamento?">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding Crf_empagamento}" Checked="CheckBoxStatusPagamento_Checked" Unchecked="CheckBoxStatusPagamento_Unchecked"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+
+                <DataGridTextColumn Header="Cliente/Empresa" Width="400" Binding="{Binding Cli_nome}"/>
+                <DataGridTextColumn Header="Parcela" Binding="{Binding Crf_parcela}"/>
+                <DataGridTextColumn Header="Data vencimento" Binding="{Binding Crf_datavencimento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Data lançamento" Binding="{Binding Crf_datalancamento, StringFormat={}{0:dd/MM/yyyy}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Valor parcela" Binding="{Binding Crf_valorparcela, StringFormat={}{0:N2}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Valor documento" Binding="{Binding Crf_valordocumento, StringFormat={}{0:N2}, ConverterCulture=pt-br}"/>
+                <DataGridTextColumn Header="Observação" Binding="{Binding Crf_observacao}" Width="450"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="2" Margin="0,5,0,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Ellipse Height="15" Width="15" Fill="Red"/>
+                <TextBlock Text=" - Contas vencida"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,1,0,0">
+                <Ellipse Height="15" Width="15" Fill="Green"/>
+                <TextBlock Text=" - Contas que ainda não venceram"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,1,0,0">
+                <Ellipse Height="15" Width="15" Fill="Blue"/>
+                <TextBlock Text=" - Contas que vence hoje"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</mui:ModernWindow>

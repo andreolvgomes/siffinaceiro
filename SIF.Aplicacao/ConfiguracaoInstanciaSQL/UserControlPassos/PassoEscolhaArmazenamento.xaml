@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="SIF.Aplicacao.ConfiguracaoInstanciaSQL.UserControlPassos.PassoEscolhaArmazenamento"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:extenders="clr-namespace:SIF.Commom.Extenders;assembly=SIF.Commom"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <extenders:RadioButtonEnum Grid.Row="0" Content="ARQUIVO" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding Armazenamento}" EnumValue="ARMAZENAMENTO_EM_ARQUIVO"/>
+        <extenders:RadioButtonEnum Grid.Row="1" Content="BANCO DE DADOS(SQL Server)" Style="{StaticResource StyleRadioButton}" EnumBinding="{Binding Armazenamento}" EnumValue="ARMAZENAMENTO_BANCO_DE_DADOS"/>
+        
+        <TextBlock Text="{Binding Detalhe}" TextWrapping="Wrap" Foreground="Red" Grid.Row="2" Margin="0,10,0,10" VerticalAlignment="Bottom"/>
+    </Grid>
+</UserControl>

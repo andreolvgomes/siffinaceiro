@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="SIF.Aplicacao.ConfiguracaoInstanciaSQL.UserControlPassos.PassoConfiguracaoISGBD"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             >
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </UserControl.Resources>
+
+    <Grid Margin="20,20,20,5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Instância Servidor SQL" Style="{StaticResource StyleTextBlockTitulo}"/>
+            <ComboBox x:Name="cmbBox" ItemsSource="{Binding ListInstancias}" SelectedValue="{Binding Instancia, UpdateSourceTrigger=PropertyChanged}" 
+                      Text="{Binding Instancia, UpdateSourceTrigger=PropertyChanged}" IsEditable="True"/>
+
+            <CheckBox x:Name="chkTimeOut" Content="Definir Connection Timeout ?" Margin="0,10,0,0" IsChecked="{Binding InfoTimeout}"/>
+            <CheckBox x:Name="chkAutenticacao" Content="Com Autenticação ?" Margin="0,0,0,10" IsChecked="{Binding Autenticacao}"/>
+
+            <StackPanel IsEnabled="{Binding Autenticacao}">
+                <TextBlock Text="Usuário" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtUsuario" CharacterCasing="Normal" Text="{Binding UsuarioSql, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Senha" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <PasswordBox x:Name="txtSenha"/>
+                <TextBlock Text="É necessário que o Servidor SQL esteja configurado para conexões autenticada!" Foreground="Red" 
+                           Visibility="{Binding ElementName=chkAutenticacao, Path=IsChecked, Converter={StaticResource booleanToVisibilityConverter}}"/>
+            </StackPanel>
+            <StackPanel Visibility="{Binding InfoTimeout, Converter={StaticResource booleanToVisibilityConverter}}">
+                <TextBlock Text="Timeout" Style="{StaticResource StyleTextBlockTitulo}"/>
+                <TextBox x:Name="txtTimeout" CharacterCasing="Normal" Text="{Binding Timeout, UpdateSourceTrigger=PropertyChanged}" Width="100" HorizontalAlignment="Left" MaxLength="2"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
