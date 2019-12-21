@@ -10,6 +10,10 @@ A telas seguem um padrão para ficar fácil usar todas
 
 ![cad contasreceber](https://user-images.githubusercontent.com/2820984/71309091-90f86380-23e2-11ea-8c50-fe0f9e122ca5.jpg)
 
+- Tela para cadastro de Formas de Pagamentos
+
+![cad fpagamentos](https://user-images.githubusercontent.com/2820984/71309111-e0d72a80-23e2-11ea-8246-a2751c5f8de4.jpg)
+
 ### Armazenamento dos dados
 
 ### Referências
