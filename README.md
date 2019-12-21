@@ -8,5 +8,5 @@ teste
 ### Armazenamento dos dados
 
 ### Referências
-Os estilos de todos os controles foram baseados no projeto do repositório a seguir, o projeto original foi mantido, no entanto, não está integrado ao sistema, foi feito uma cópia para fazer as mudanças necessárias em alguns controles para que o sistema tivesse uma aparência única e diferenciada.
+Os estilos de todos os controles tem como base no projeto do repositório a seguir, o fonte original se encontra junto dos arquivos do projeto, no entanto, não está integrado ao sistema, foi feito uma cópia para fazer as mudanças necessárias em alguns controles para que o sistema tivesse uma aparência única e diferenciada.
 https://github.com/firstfloorsoftware/mui
