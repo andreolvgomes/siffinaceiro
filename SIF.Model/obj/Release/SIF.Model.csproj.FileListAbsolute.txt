@@ -1,0 +1,7 @@
+D:\OneDrive\Programação\SIF\SIF.Model\bin\Release\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Model\bin\Release\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Release\SIF.Model.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Release\SIF.Model.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Release\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Release\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Release\SIF.Model.csprojResolveAssemblyReference.cache

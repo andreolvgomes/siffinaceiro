@@ -1,0 +1,7 @@
+D:\OneDrive\Programação\SIF\WindowViewState\obj\Debug\WindowViewState.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\WindowViewState\obj\Debug\WindowViewState.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\WindowViewState\bin\Debug\WindowViewState.dll
+D:\OneDrive\Programação\SIF\WindowViewState\bin\Debug\WindowViewState.pdb
+D:\OneDrive\Programação\SIF\WindowViewState\bin\Debug\JulMar.Wpf.Helpers.dll
+D:\OneDrive\Programação\SIF\WindowViewState\obj\Debug\WindowViewState.dll
+D:\OneDrive\Programação\SIF\WindowViewState\obj\Debug\WindowViewState.pdb

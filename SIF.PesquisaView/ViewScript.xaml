@@ -1,0 +1,19 @@
+﻿<mui:ModernWindow x:Class="SIF.PesquisaView.ViewScript"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        xmlns:editor="clr-namespace:EditorSQL;assembly=EditorSQL"
+        IsTitleVisible="True" Style="{StaticResource BlankWindow}" Title="COMANDOS DA CONSULTA" WindowStartupLocation="CenterOwner" Height="500" ShowInTaskbar="False"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <TabControl BorderBrush="White">
+            <TabItem Header="Comandos da consulta">
+                <editor:SourceCodeEditor x:Name="txtComandos" Grid.Row="0" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="15"/>
+            </TabItem>
+            <TabItem Header="Script SQL da View temporária">
+                <editor:SourceCodeEditor x:Name="txtScript" Grid.Row="0" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="15"/>
+            </TabItem>
+        </TabControl>        
+    </Grid>
+</mui:ModernWindow>

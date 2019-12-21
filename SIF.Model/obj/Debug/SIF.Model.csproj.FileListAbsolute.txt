@@ -1,0 +1,14 @@
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Model\bin\Debug\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Model\bin\Debug\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.pdb
+E:\OneDrive\Programação\SIF\SIF.Model\bin\Debug\SIF.Model.dll
+E:\OneDrive\Programação\SIF\SIF.Model\bin\Debug\SIF.Model.pdb
+E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.csprojResolveAssemblyReference.cache
+E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.Properties.Resources.resources
+E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.csproj.GenerateResource.Cache
+E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.dll
+E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.pdb

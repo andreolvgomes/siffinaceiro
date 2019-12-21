@@ -1,0 +1,9 @@
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Release\SIF.Dao.dll
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Release\SIF.Dao.pdb
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Release\SIF.Model.dll
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Release\SIF.Model.pdb
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Release\SIF.Dao.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Release\SIF.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Release\SIF.Dao.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Release\SIF.Dao.dll
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Release\SIF.Dao.pdb

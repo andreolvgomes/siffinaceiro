@@ -1,0 +1,12 @@
+﻿<mui:ModernWindow x:Class="SIF.Pesquisa.PesquisaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SIF.Pesquisa.DataGrid"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="PESQUISA" Style="{StaticResource BlankWindow}" WindowStartupLocation="CenterScreen"
+        WindowState="Maximized" ShowInTaskbar="False" HeightBorder="40"
+        >
+    <Grid>
+        <local:DataGridPesquisa x:Name="dgv" ItemsSource="{Binding source}" AutoGenerateColumns="False" PreviewKeyDown="dgv_PreviewKeyDown_1"/>
+    </Grid>
+</mui:ModernWindow>

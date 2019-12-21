@@ -1,0 +1,16 @@
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Debug\SIF.Dao.dll
+D:\OneDrive\Programação\SIF\SIF.Dao\bin\Debug\SIF.Dao.pdb
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.csprojResolveAssemblyReference.cache
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.g.resources
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.Properties.Resources.resources
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.csproj.GenerateResource.Cache
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.dll
+D:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.pdb
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.csprojResolveAssemblyReference.cache
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.g.resources
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.Properties.Resources.resources
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.csproj.GenerateResource.Cache
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.dll
+G:\OneDrive\Programação\SIF\SIF.Dao\bin\Debug\SIF.Dao.dll
+G:\OneDrive\Programação\SIF\SIF.Dao\bin\Debug\SIF.Dao.pdb
+G:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.pdb

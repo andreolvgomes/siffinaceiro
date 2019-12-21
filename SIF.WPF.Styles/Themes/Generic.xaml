@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:SIF.WPF.Styles.Windows.Controls"
+                    xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/BBCodeBlock.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernButton.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernDialog.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernFrame.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernMenu.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernProgressRing.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernTab.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/ModernWindow.xaml" />
+        <ResourceDictionary Source="/SIF.WPF.Styles;component/Themes/TransitioningContentControl.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+ 
+</ResourceDictionary>
