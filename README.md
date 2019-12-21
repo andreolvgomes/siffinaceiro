@@ -4,6 +4,11 @@ SIF, é um sistema para controle financeiro pessoal
 teste
 
 ### Telas de Exemplos
+A telas seguem um padrão para ficar fácil usar todas
+
+- Tela para cadastro de Contas a Receber
+
+![cad contasreceber](https://user-images.githubusercontent.com/2820984/71309091-90f86380-23e2-11ea-8c50-fe0f9e122ca5.jpg)
 
 ### Armazenamento dos dados
 
