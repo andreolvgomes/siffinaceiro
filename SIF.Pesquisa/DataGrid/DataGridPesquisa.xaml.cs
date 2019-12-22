@@ -222,10 +222,10 @@ namespace SIF.Pesquisa.DataGrid
             _SqlConnection = new SqlConnection(connectionString);
             _SqlConnection.Open();
             _disposeConnection = _SqlConnection.State == System.Data.ConnectionState.Open;
-            return InicializaGrid(commandSql, _SqlConnection);
+            return Initialize(commandSql, _SqlConnection);
         }
 
-        public bool InicializaGrid(string commandSql, SqlConnection sqlConnection)
+        public bool Initialize(string sql, SqlConnection sqlConnection)
         {
             this.Dispatcher.BeginInvoke(DispatcherPriority.Background, (System.Threading.ThreadStart)delegate
             {
@@ -233,7 +233,7 @@ namespace SIF.Pesquisa.DataGrid
 
                 using (InicializacaoDataGrid s = new InicializacaoDataGrid(_SqlConnection))
                 {
-                    ExpressoesSql = s.Inicia(commandSql);
+                    ExpressoesSql = s.Inicia(sql);
                     s.SetCampos(this.Columns, TypeFields);
 
                     Pesquisa = new PesquisaExecucaoSql(_SqlConnection, ExpressoesSql);

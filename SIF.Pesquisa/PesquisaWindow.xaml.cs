@@ -25,7 +25,7 @@ namespace SIF.Pesquisa
         {
             InitializeComponent();
 
-            dgv.InicializaGrid(commandSelect, sqlconnection);
+            dgv.Initialize(commandSelect, sqlconnection);
 
             this.Title = "CONSULTA";
             if (!string.IsNullOrEmpty(titulo))

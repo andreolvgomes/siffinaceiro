@@ -31,7 +31,7 @@ namespace SIF.PesquisaViewSP
         {
             InitializeComponent();
 
-            dgv.CarregaDataGridView(sqlConnection, commandSelect);
+            dgv.Initialize(sqlConnection, commandSelect);
 
             this.Title = "CONSULTA";
             if (!string.IsNullOrEmpty(titulo))

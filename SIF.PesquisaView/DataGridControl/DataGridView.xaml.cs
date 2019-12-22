@@ -209,7 +209,7 @@ namespace SIF.PesquisaView.DataGridControl
 
         private System.Data.SqlClient.SqlConnection sqlConnection = null;
 
-        public void CarregaDataGridView(System.Data.SqlClient.SqlConnection sqlConnection, string commandSelectQuery)
+        public void Initialize(System.Data.SqlClient.SqlConnection sqlConnection, string commandSelectQuery)
         {
             this.sqlConnection = sqlConnection;
             this.createColumnsDataGridView.CreateColumns(sqlConnection, commandSelectQuery);
