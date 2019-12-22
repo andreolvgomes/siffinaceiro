@@ -9,6 +9,11 @@
             Provides various common helper methods.
             </summary>
         </member>
+        <member name="P:SIF.WPF.Styles.ModernUIHelper.IsInDesignMode">
+            <summary>
+            Determines whether the current code is executed in a design time environment such as Visual Studio or Blend.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.ModernUIHelper.GetDpiAwereness">
             <summary>
             Gets the DPI awereness of the current process.
@@ -33,11 +38,6 @@
             effectively revokes the [assembly:DisableDpiAwareness] attribute if set.
             </para>
             </remarks>
-        </member>
-        <member name="P:SIF.WPF.Styles.ModernUIHelper.IsInDesignMode">
-            <summary>
-            Determines whether the current code is executed in a design time environment such as Visual Studio or Blend.
-            </summary>
         </member>
         <member name="T:SIF.WPF.Styles.Presentation.ReadOnlyLinkGroupCollection">
             <summary>
@@ -75,9 +75,14 @@
             The base implementation of a command.
             </summary>
         </member>
+        <member name="E:SIF.WPF.Styles.Presentation.CommandBase.CanExecuteChanged">
+            <summary>
+            Occurs when changes occur that affect whether or not the command should execute.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.Presentation.CommandBase.OnCanExecuteChanged">
             <summary>
-            Raises the <see cref="E:SIF.WPF.Styles.Presentation.CommandBase.CanExecuteChanged"/> event.
+            Raises the <see cref="E:SIF.WPF.Styles.Presentation.CommandBase.CanExecuteChanged" /> event.
             </summary>
         </member>
         <member name="M:SIF.WPF.Styles.Presentation.CommandBase.CanExecute(System.Object)">
@@ -101,11 +106,6 @@
             </summary>
             <param name="parameter">The parameter.</param>
         </member>
-        <member name="E:SIF.WPF.Styles.Presentation.CommandBase.CanExecuteChanged">
-            <summary>
-            Occurs when changes occur that affect whether or not the command should execute.
-            </summary>
-        </member>
         <member name="T:SIF.WPF.Styles.Presentation.LinkGroupCollection">
             <summary>
             Represents an observable collection of link groups.
@@ -114,22 +114,6 @@
         <member name="T:SIF.WPF.Styles.Presentation.Displayable">
             <summary>
             Provides a base implementation for objects that are displayed in the UI.
-            </summary>
-        </member>
-        <member name="T:SIF.WPF.Styles.Presentation.NotifyPropertyChanged">
-            <summary>
-            The base implementation of the INotifyPropertyChanged contract.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Presentation.NotifyPropertyChanged.OnPropertyChanged(System.String)">
-            <summary>
-            Raises the PropertyChanged event.
-            </summary>
-            <param name="propertyName">Name of the property.</param>
-        </member>
-        <member name="E:SIF.WPF.Styles.Presentation.NotifyPropertyChanged.PropertyChanged">
-            <summary>
-            Occurs when a property value changes.
             </summary>
         </member>
         <member name="P:SIF.WPF.Styles.Presentation.Displayable.DisplayName">
@@ -191,6 +175,22 @@
             </summary>
             <value>The links.</value>
         </member>
+        <member name="T:SIF.WPF.Styles.Presentation.NotifyPropertyChanged">
+            <summary>
+            The base implementation of the INotifyPropertyChanged contract.
+            </summary>
+        </member>
+        <member name="E:SIF.WPF.Styles.Presentation.NotifyPropertyChanged.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Presentation.NotifyPropertyChanged.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the PropertyChanged event.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
         <member name="T:SIF.WPF.Styles.Presentation.RelayCommand">
             <summary>
             The command that relays its functionality by invoking delegates.
@@ -223,6 +223,16 @@
             Manages the theme, font size and accent colors for a Modern UI application.
             </summary>
         </member>
+        <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.DarkThemeSource">
+            <summary>
+            The location of the dark theme resource dictionary.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.LightThemeSource">
+            <summary>
+            The location of the light theme resource dictionary.
+            </summary>
+        </member>
         <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.KeyAccentColor">
             <summary>
             The resource key for the accent color.
@@ -241,16 +251,6 @@
         <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.KeyFixedFontSize">
             <summary>
             The resource key for the fixed font size.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.DarkThemeSource">
-            <summary>
-            The location of the dark theme resource dictionary.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Presentation.AppearanceManager.LightThemeSource">
-            <summary>
-            The location of the light theme resource dictionary.
             </summary>
         </member>
         <member name="M:SIF.WPF.Styles.Presentation.AppearanceManager.#ctor">
@@ -435,6 +435,182 @@
             http://msdn.microsoft.com/library/windows/desktop/dn424972.aspx
             </summary>
         </member>
+        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS">
+            <summary>
+            Operating systems, the information which is stored within
+            the class <seealso cref="T:SIF.WPF.Styles.Win32.OSVersionHelper"/>.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXP">
+            <summary>
+            Windows XP.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP1">
+            <summary>
+            Windows XP SP1.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP2">
+            <summary>
+            Windows XP SP2.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP3">
+            <summary>
+            Windows XP SP3.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVista">
+            <summary>
+            Windows Vista.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVistaSP1">
+            <summary>
+            Windows Vista SP1.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVistaSP2">
+            <summary>
+            Windows Vista SP2.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows7">
+            <summary>
+            Windows 7.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows7SP1">
+            <summary>
+            Windows 7 SP1.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows8">
+            <summary>
+            Windows 8.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows8Point1">
+            <summary>
+            Windows 8.1.
+            </summary>
+        </member>
+        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry">
+            <summary>
+            Information about operating system.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MajorVersion">
+            <summary>
+            The major version number of the operating system.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MinorVersion">
+            <summary>
+            The minor version number of the operating system.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.ServicePackMajor">
+            <summary>
+            The major version number of the latest Service Pack installed
+            on the system. For example, for Service Pack 3, the major
+            version number is 3. If no Service Pack has been installed,
+            the value is zero.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MatchesOrGreater">
+            <summary>
+            Flag indicating if the running OS matches, or is greater
+            than, the OS specified with this entry. Should be initialized
+            with <see cref="M:SIF.WPF.Styles.Win32.OSVersionHelper.VerifyVersionInfo(SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx@,System.UInt32,System.UInt64)"/> method.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.#ctor(System.UInt32,System.UInt32,System.UInt16)">
+            <summary>
+            Creates a new entry of operating system.
+            </summary>
+            <param name="majorVersion">The major version number of the
+            operating system.</param>
+            <param name="minorVersion">The minor version number of the
+            operating system.</param>
+            <param name="servicePackMajor">The major version number of the
+            latest Service Pack installed on the system. For example, for
+            Service Pack 3, the major version number is 3. If no Service
+            Pack has been installed, the value is zero.</param>
+        </member>
+        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx">
+            <summary>
+            Wrapper for OSVERSIONINFOEX structure.
+            http://msdn.microsoft.com/library/windows/desktop/ms724833.aspx
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.OSVersionInfoSize">
+            <summary>
+            The size of this data structure, in bytes.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.MajorVersion">
+            <summary>
+            The major version number of the operating system.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.MinorVersion">
+            <summary>
+            The minor version number of the operating system.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.BuildNumber">
+            <summary>
+            The build number of the operating system.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.PlatformId">
+            <summary>
+            The operating system platform.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.CSDVersion">
+            <summary>
+            A null-terminated string, such as "Service Pack 3", that
+            indicates the latest Service Pack installed on the system. If
+            no Service Pack has been installed, the string is empty.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ServicePackMajor">
+            <summary>
+            The major version number of the latest Service Pack installed
+            on the system. For example, for Service Pack 3, the major
+            version number is 3. If no Service Pack has been installed,
+            the value is zero.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ServicePackMinor">
+            <summary>
+            The minor version number of the latest Service Pack installed
+            on the system. For example, for Service Pack 3, the minor
+            version number is 0.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.SuiteMask">
+            <summary>
+            A bit mask that identifies the product suites available on the
+            system, e.g., flags indicating if the operating system is
+            Datacenter Server or Windows XP Embedded.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ProductType">
+            <summary>
+            Any additional information about the system, e.g., flags
+            indicating if the operating system is a domain controller,
+            a server or a workstation.
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.Reserved">
+            <summary>
+            Reserved for future use.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.Win32.OSVersionHelper.VerSetConditionMask(System.UInt64,System.UInt32,System.Byte)">
             <summary>
             <para>Wrapper for VerSetConditionMask function (
@@ -588,182 +764,6 @@
             Indicates if the current OS is a Windows Server release.
             </summary>
         </member>
-        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS">
-            <summary>
-            Operating systems, the information which is stored within
-            the class <seealso cref="T:SIF.WPF.Styles.Win32.OSVersionHelper"/>.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXP">
-            <summary>
-            Windows XP.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP1">
-            <summary>
-            Windows XP SP1.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP2">
-            <summary>
-            Windows XP SP2.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsXPSP3">
-            <summary>
-            Windows XP SP3.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVista">
-            <summary>
-            Windows Vista.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVistaSP1">
-            <summary>
-            Windows Vista SP1.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.WindowsVistaSP2">
-            <summary>
-            Windows Vista SP2.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows7">
-            <summary>
-            Windows 7.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows7SP1">
-            <summary>
-            Windows 7 SP1.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows8">
-            <summary>
-            Windows 8.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.KnownOS.Windows8Point1">
-            <summary>
-            Windows 8.1.
-            </summary>
-        </member>
-        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry">
-            <summary>
-            Information about operating system.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.#ctor(System.UInt32,System.UInt32,System.UInt16)">
-            <summary>
-            Creates a new entry of operating system.
-            </summary>
-            <param name="majorVersion">The major version number of the
-            operating system.</param>
-            <param name="minorVersion">The minor version number of the
-            operating system.</param>
-            <param name="servicePackMajor">The major version number of the
-            latest Service Pack installed on the system. For example, for
-            Service Pack 3, the major version number is 3. If no Service
-            Pack has been installed, the value is zero.</param>
-        </member>
-        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MajorVersion">
-            <summary>
-            The major version number of the operating system.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MinorVersion">
-            <summary>
-            The minor version number of the operating system.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.ServicePackMajor">
-            <summary>
-            The major version number of the latest Service Pack installed
-            on the system. For example, for Service Pack 3, the major
-            version number is 3. If no Service Pack has been installed,
-            the value is zero.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Win32.OSVersionHelper.OsEntry.MatchesOrGreater">
-            <summary>
-            Flag indicating if the running OS matches, or is greater
-            than, the OS specified with this entry. Should be initialized
-            with <see cref="M:SIF.WPF.Styles.Win32.OSVersionHelper.VerifyVersionInfo(SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx@,System.UInt32,System.UInt64)"/> method.
-            </summary>
-        </member>
-        <member name="T:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx">
-            <summary>
-            Wrapper for OSVERSIONINFOEX structure.
-            http://msdn.microsoft.com/library/windows/desktop/ms724833.aspx
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.OSVersionInfoSize">
-            <summary>
-            The size of this data structure, in bytes.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.MajorVersion">
-            <summary>
-            The major version number of the operating system.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.MinorVersion">
-            <summary>
-            The minor version number of the operating system.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.BuildNumber">
-            <summary>
-            The build number of the operating system.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.PlatformId">
-            <summary>
-            The operating system platform.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.CSDVersion">
-            <summary>
-            A null-terminated string, such as "Service Pack 3", that
-            indicates the latest Service Pack installed on the system. If
-            no Service Pack has been installed, the string is empty.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ServicePackMajor">
-            <summary>
-            The major version number of the latest Service Pack installed
-            on the system. For example, for Service Pack 3, the major
-            version number is 3. If no Service Pack has been installed,
-            the value is zero.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ServicePackMinor">
-            <summary>
-            The minor version number of the latest Service Pack installed
-            on the system. For example, for Service Pack 3, the minor
-            version number is 0.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.SuiteMask">
-            <summary>
-            A bit mask that identifies the product suites available on the
-            system, e.g., flags indicating if the operating system is
-            Datacenter Server or Windows XP Embedded.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.ProductType">
-            <summary>
-            Any additional information about the system, e.g., flags
-            indicating if the operating system is a domain controller,
-            a server or a workstation.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Win32.OSVersionHelper.OsVersionInfoEx.Reserved">
-            <summary>
-            Reserved for future use.
-            </summary>
-        </member>
         <member name="T:SIF.WPF.Styles.Windows.CommandDictionary">
             <summary>
             Represents a collection of commands keyed by a uri.
@@ -804,10 +804,23 @@
             A window instance that is capable of per-monitor DPI awareness when supported.
             </summary>
         </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.DpiChanged">
+            <summary>
+            Occurs when the system or monitor DPI for this window has changed.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow"/> class.
             </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.DpiInformation">
+            <summary>
+            Gets the DPI information for this window instance.
+            </summary>
+            <remarks>
+            DPI information is available after a window handle has been created.
+            </remarks>
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.OnClosed(System.EventArgs)">
             <summary>
@@ -822,22 +835,9 @@
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.OnDpiChanged(System.EventArgs)">
             <summary>
-            Raises the <see cref="E:DpiChanged"/> event.
+            Raises the <see cref="E:DpiChanged" /> event.
             </summary>
             <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.DpiChanged">
-            <summary>
-            Occurs when the system or monitor DPI for this window has changed.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.DpiAwareWindow.DpiInformation">
-            <summary>
-            Gets the DPI information for this window instance.
-            </summary>
-            <remarks>
-            DPI information is available after a window handle has been created.
-            </remarks>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.DpiInformation">
             <summary>
@@ -874,16 +874,6 @@
         <member name="P:SIF.WPF.Styles.Windows.Controls.DpiInformation.ScaleY">
             <summary>
             Gets the y-axis scale factor.
-            </summary>
-        </member>
-        <member name="T:System.Windows.MessageType">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:System.Windows.MessageType.Error">
-            <summary>
-            
             </summary>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.ModernProgressRing">
@@ -1033,6 +1023,122 @@
             The BBCode lexer.
             </summary>
         </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenStartTag">
+            <summary>
+            Start tag
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenEndTag">
+            <summary>
+            End tag
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenAttribute">
+            <summary>
+            Attribute
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenText">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenLineBreak">
+            <summary>
+            Line break
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.StateNormal">
+            <summary>
+            Normal state
+            </summary>
+        </member>
+        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.StateTag">
+            <summary>
+            Tag state
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BBCodeLexer"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.DefaultState">
+            <summary>
+            Gets the default state of the lexer.
+            </summary>
+            <value>The state of the default.</value>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.NextToken">
+            <summary>
+            Gets the next token.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser">
+            <summary>
+            Represents the BBCode parser.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.ParseContext.CreateRun(System.String)">
+            <summary>
+            Creates a run reflecting the current context settings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.#ctor(System.String,System.Windows.FrameworkElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BBCodeParser"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="source">The framework source element this parser operates in.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.Commands">
+            <summary>
+            Gets or sets the available navigable commands.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.Parse">
+            <summary>
+            Parses the text and returns a Span containing the parsed result.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer">
+            <summary>
+            Represents a character buffer.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CharBuffer"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.LA(System.Int32)">
+            <summary>
+            Performs a look-ahead.
+            </summary>
+            <param name="count">The number of character to look ahead.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.Mark">
+            <summary>
+            Marks the current position.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.GetMark">
+            <summary>
+            Gets the mark.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.Consume">
+            <summary>
+            Consumes the next character.
+            </summary>
+        </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer">
             <summary>
             Provides basic lexer functionality.
@@ -1048,6 +1154,18 @@
             Initializes a new instance of the <see cref="T:Lexer"/> class.
             </summary>
             <param name="value">The value.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer.DefaultState">
+            <summary>
+            Gets the default state of the lexer.
+            </summary>
+            <value>The state of the default.</value>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer.State">
+            <summary>
+            Gets the current state of the lexer.
+            </summary>
+            <value>The state.</value>
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer.PushState(System.Int32)">
             <summary>
@@ -1159,75 +1277,28 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer.DefaultState">
+        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException">
             <summary>
-            Gets the default state of the lexer.
-            </summary>
-            <value>The state of the default.</value>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.Lexer.State">
-            <summary>
-            Gets the current state of the lexer.
-            </summary>
-            <value>The state.</value>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenStartTag">
-            <summary>
-            Start tag
+            The exception for parse errors.
             </summary>
         </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenEndTag">
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor">
             <summary>
-            End tag
+            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
             </summary>
         </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenAttribute">
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor(System.String)">
             <summary>
-            Attribute
+            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
             </summary>
+            <param name="message">The message.</param>
         </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenText">
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor(System.String,System.Exception)">
             <summary>
-            Text
+            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
             </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.TokenLineBreak">
-            <summary>
-            Line break
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.StateNormal">
-            <summary>
-            Normal state
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.StateTag">
-            <summary>
-            Tag state
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:BBCodeLexer"/> class.
-            </summary>
-            <param name="value">The value.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.NextToken">
-            <summary>
-            Gets the next token.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeLexer.DefaultState">
-            <summary>
-            Gets the default state of the lexer.
-            </summary>
-            <value>The state of the default.</value>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser">
-            <summary>
-            Represents the BBCode parser.
-            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.Parser`1">
             <summary>
@@ -1287,87 +1358,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.#ctor(System.String,System.Windows.FrameworkElement)">
-            <summary>
-            Initializes a new instance of the <see cref="T:BBCodeParser"/> class.
-            </summary>
-            <param name="value">The value.</param>
-            <param name="source">The framework source element this parser operates in.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.Parse">
-            <summary>
-            Parses the text and returns a Span containing the parsed result.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.Commands">
-            <summary>
-            Gets or sets the available navigable commands.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.BBCodeParser.ParseContext.CreateRun(System.String)">
-            <summary>
-            Creates a run reflecting the current context settings.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer">
-            <summary>
-            Represents a character buffer.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:CharBuffer"/> class.
-            </summary>
-            <param name="value">The value.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.LA(System.Int32)">
-            <summary>
-            Performs a look-ahead.
-            </summary>
-            <param name="count">The number of character to look ahead.</param>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.Mark">
-            <summary>
-            Marks the current position.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.GetMark">
-            <summary>
-            Gets the mark.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.CharBuffer.Consume">
-            <summary>
-            Consumes the next character.
-            </summary>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException">
-            <summary>
-            The exception for parse errors.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor(System.String)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
-            </summary>
-            <param name="message">The message.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException.#ctor(System.String,System.Exception)">
-            <summary>
-            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.BBCode.ParseException"/> class.
-            </summary>
-            <param name="message">The message.</param>
-            <param name="innerException">The inner exception.</param>
-        </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.Token">
             <summary>
             Represents a single token.
@@ -1385,14 +1375,6 @@
             <param name="value">The value.</param>
             <param name="tokenType">Type of the token.</param>
         </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.Token.ToString">
-            <summary>
-            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
-            </summary>
-            <returns>
-            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
-            </returns>
-        </member>
         <member name="P:SIF.WPF.Styles.Windows.Controls.BBCode.Token.Value">
             <summary>
             Gets the value.
@@ -1404,6 +1386,14 @@
             Gets the type of the token.
             </summary>
             <value>The type.</value>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.BBCode.Token.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.BBCode.TokenBuffer">
             <summary>
@@ -1447,27 +1437,6 @@
             <summary>
             Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernDialog"/> class.
             </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernDialog.ShowResult(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.Window)">
-            <summary>
-            Mostra msg
-            </summary>
-            <param name="mensagem"></param>
-            <param name="titulo"></param>
-            <param name="button"></param>
-            <param name="owner"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernDialog.ShowResult(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.Window,System.Windows.MessageBoxImage)">
-            <summary>
-            Mostra msg
-            </summary>
-            <param name="mensagem"></param>
-            <param name="titulo"></param>
-            <param name="button"></param>
-            <param name="owner"></param>
-            <param name="type"></param>
-            <returns></returns>
         </member>
         <member name="P:SIF.WPF.Styles.Windows.Controls.ModernDialog.CloseCommand">
             <summary>
@@ -1517,6 +1486,27 @@
             The message box result.
             </value>
         </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernDialog.ShowResult(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.Window)">
+            <summary>
+            Mostra msg
+            </summary>
+            <param name="mensagem"></param>
+            <param name="titulo"></param>
+            <param name="button"></param>
+            <param name="owner"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernDialog.ShowResult(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.Window,System.Windows.MessageBoxImage)">
+            <summary>
+            Mostra msg
+            </summary>
+            <param name="mensagem"></param>
+            <param name="titulo"></param>
+            <param name="button"></param>
+            <param name="owner"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
         <member name="P:SIF.WPF.Styles.Windows.Controls.ModernDialog.eff">
             <summary>
             
@@ -1552,21 +1542,14 @@
             Defines the VisibleLinkGroups dependency property.
             </summary>
         </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernMenu.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernMenu"/> class.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernMenu.GetGroupKey(SIF.WPF.Styles.Presentation.LinkGroup)">
-            <summary>
-            Gets a non-null key for given group.
-            </summary>
-            <param name="group"></param>
-            <returns></returns>
-        </member>
         <member name="E:SIF.WPF.Styles.Windows.Controls.ModernMenu.SelectedSourceChanged">
             <summary>
             Occurs when the selected source has changed.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernMenu.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernMenu"/> class.
             </summary>
         </member>
         <member name="P:SIF.WPF.Styles.Windows.Controls.ModernMenu.LinkGroups">
@@ -1596,6 +1579,13 @@
             <summary>
             Gets the collection of link groups that are currently visible.
             </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernMenu.GetGroupKey(SIF.WPF.Styles.Presentation.LinkGroup)">
+            <summary>
+            Gets a non-null key for given group.
+            </summary>
+            <param name="group"></param>
+            <returns></returns>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.ModernTab">
             <summary>
@@ -1627,6 +1617,11 @@
             Identifies the SelectedSource dependency property.
             </summary>
         </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernTab.SelectedSourceChanged">
+            <summary>
+            Occurs when the selected source has changed.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.ModernTab.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernTab"/> control.
@@ -1635,11 +1630,6 @@
         <member name="M:SIF.WPF.Styles.Windows.Controls.ModernTab.OnApplyTemplate">
             <summary>
             When overridden in a derived class, is invoked whenever application code or internal processes call System.Windows.FrameworkElement.ApplyTemplate().
-            </summary>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernTab.SelectedSourceChanged">
-            <summary>
-            Occurs when the selected source has changed.
             </summary>
         </member>
         <member name="P:SIF.WPF.Styles.Windows.Controls.ModernTab.ContentLoader">
@@ -1901,11 +1891,21 @@
             runtime.
             </summary>
         </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.OriginalValue">
+            <summary>
+            Gets or sets the original double value.
+            </summary>
+        </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.#ctor(SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.DoubleAnimationDimension)">
             <summary>
             Initializes a new instance of the AnimationValueAdapter type.
             </summary>
             <param name="dimension">The dimension of interest for updates.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.Dimension">
+            <summary>
+            Gets the dimension of interest for the control.
+            </summary>
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.UpdateWithNewDimension(System.Double,System.Double)">
             <summary>
@@ -1916,14 +1916,9 @@
             <param name="width">The width of the control.</param>
             <param name="height">The height of the control.</param>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.OriginalValue">
+        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1.Instance">
             <summary>
-            Gets or sets the original double value.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.AnimationValueAdapter.Dimension">
-            <summary>
-            Gets the dimension of interest for the control.
+            Stores the animation instance.
             </summary>
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1.GetValue">
@@ -1937,6 +1932,12 @@
             Sets the value for the underlying property of interest.
             </summary>
             <param name="newValue">The new value for the property.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1.InitialValue">
+            <summary>
+            Gets the initial value (minus the identifying value portion) that the
+            designer stored within the visual state animation property.
+            </summary>
         </member>
         <member name="F:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1._ratio">
             <summary>
@@ -1984,17 +1985,6 @@
             </summary>
             <param name="sizeToUse">The size of interest to use with a ratio
             computation.</param>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1.Instance">
-            <summary>
-            Stores the animation instance.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.GeneralAnimationValueAdapter`1.InitialValue">
-            <summary>
-            Gets the initial value (minus the identifying value portion) that the
-            designer stored within the visual state animation property.
-            </summary>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Controls.RelativeAnimatingContentControl.DoubleAnimationToAdapter">
             <summary>
@@ -2119,9 +2109,32 @@
             The name of the control that will display the current content.
             </summary>
         </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.CurrentContentPresentationSite">
+            <summary>
+            Gets or sets the current content presentation site.
+            </summary>
+            <value>The current content presentation site.</value>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.PreviousContentPresentationSite">
+            <summary>
+            Gets or sets the previous content presentation site.
+            </summary>
+            <value>The previous content presentation site.</value>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.IsTransitioningChanged">
+            <summary>
+            Occurs when the IsTransitioning value has changed.
+            </summary>
+        </member>
         <member name="F:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl._allowIsTransitioningWrite">
             <summary>
             Indicates whether the control allows writing IsTransitioning.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.IsTransitioning">
+            <summary>
+            Gets a value indicating whether this instance is currently performing
+            a transition.
             </summary>
         </member>
         <member name="F:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.IsTransitioningProperty">
@@ -2141,6 +2154,17 @@
             The storyboard that is used to transition old and new content.
             </summary>
         </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.CurrentTransition">
+            <summary>
+            Gets or sets the storyboard that is used to transition old and new content.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.Transition">
+            <summary>
+            Gets or sets the name of the transition to use. These correspond
+            directly to the VisualStates inside the PresentationStates group.
+            </summary>
+        </member>
         <member name="F:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.TransitionProperty">
             <summary>
             Identifies the Transition dependency property.
@@ -2152,6 +2176,12 @@
             </summary>
             <param name="d">TransitioningContentControl that changed its Transition.</param>
             <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.RestartTransitionOnContentChange">
+            <summary>
+            Gets or sets a value indicating whether the current transition
+            will be aborted when setting new content during a transition.
+            </summary>
         </member>
         <member name="F:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.RestartTransitionOnContentChangeProperty">
             <summary>
@@ -2171,6 +2201,11 @@
             </summary>
             <param name="oldValue">The old value of RestartTransitionOnContentChange.</param>
             <param name="newValue">The new value of RestartTransitionOnContentChange.</param>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.TransitionCompleted">
+            <summary>
+            Occurs when the current transition has completed.
+            </summary>
         </member>
         <member name="M:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.#cctor">
             <summary>
@@ -2221,49 +2256,111 @@
             <param name="newTransition">The new transition.</param>
             <returns>A storyboard or null, if no storyboard was found.</returns>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.CurrentContentPresentationSite">
+        <member name="T:SIF.WPF.Styles.Windows.Controls.ModernFrame">
             <summary>
-            Gets or sets the current content presentation site.
-            </summary>
-            <value>The current content presentation site.</value>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.PreviousContentPresentationSite">
-            <summary>
-            Gets or sets the previous content presentation site.
-            </summary>
-            <value>The previous content presentation site.</value>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.IsTransitioningChanged">
-            <summary>
-            Occurs when the IsTransitioning value has changed.
+            A simple content frame implementation with navigation support.
             </summary>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.IsTransitioning">
+        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepAliveProperty">
             <summary>
-            Gets a value indicating whether this instance is currently performing
-            a transition.
+            Identifies the KeepAlive attached dependency property.
             </summary>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.CurrentTransition">
+        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepContentAliveProperty">
             <summary>
-            Gets or sets the storyboard that is used to transition old and new content.
+            Identifies the KeepContentAlive dependency property.
             </summary>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.Transition">
+        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.ContentLoaderProperty">
             <summary>
-            Gets or sets the name of the transition to use. These correspond
-            directly to the VisualStates inside the PresentationStates group.
+            Identifies the ContentLoader dependency property.
             </summary>
         </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.RestartTransitionOnContentChange">
+        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.IsLoadingContentProperty">
             <summary>
-            Gets or sets a value indicating whether the current transition
-            will be aborted when setting new content during a transition.
+            Identifies the IsLoadingContent dependency property.
             </summary>
         </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.TransitioningContentControl.TransitionCompleted">
+        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.SourceProperty">
             <summary>
-            Occurs when the current transition has completed.
+            Identifies the Source dependency property.
+            </summary>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.FragmentNavigation">
+            <summary>
+            Occurs when navigation to a content fragment begins.
+            </summary>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigating">
+            <summary>
+            Occurs when a new navigation is requested.
+            </summary>
+            <remarks>
+            The navigating event is also raised when a parent frame is navigating. This allows for cancelling parent navigation.
+            </remarks>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigated">
+            <summary>
+            Occurs when navigation to new content has completed.
+            </summary>
+        </member>
+        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.NavigationFailed">
+            <summary>
+            Occurs when navigation has failed.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernFrame"/> class.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.HandleRoutedEvent(System.Windows.Input.CanExecuteRoutedEventArgs)">
+            <summary>
+            Determines whether the routed event args should be handled.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+            <remarks>This method prevents parent frames from handling routed commands.</remarks>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.ShouldKeepContentAlive(System.Object)">
+            <summary>
+            Determines whether the specified content should be kept alive.
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.GetKeepAlive(System.Windows.DependencyObject)">
+            <summary>
+            Gets a value indicating whether to keep specified object alive in a ModernFrame instance.
+            </summary>
+            <param name="o">The target dependency object.</param>
+            <returns>Whether to keep the object alive. Null to leave the decision to the ModernFrame.</returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.SetKeepAlive(System.Windows.DependencyObject,System.Nullable{System.Boolean})">
+            <summary>
+            Sets a value indicating whether to keep specified object alive in a ModernFrame instance.
+            </summary>
+            <param name="o">The target dependency object.</param>
+            <param name="value">Whether to keep the object alive. Null to leave the decision to the ModernFrame.</param>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepContentAlive">
+            <summary>
+            Gets or sets a value whether content should be kept in memory.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.ContentLoader">
+            <summary>
+            Gets or sets the content loader.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.IsLoadingContent">
+            <summary>
+            Gets a value indicating whether this instance is currently loading content.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.Source">
+            <summary>
+            Gets or sets the source of the current content.
             </summary>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Converters.BooleanToFontWeightConverter">
@@ -2470,19 +2567,6 @@
             Loads XAML files using Application.LoadComponent.
             </summary>
         </member>
-        <member name="T:SIF.WPF.Styles.Windows.IContentLoader">
-            <summary>
-            The contract for loading content.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.IContentLoader.LoadContentAsync(System.Uri,System.Threading.CancellationToken)">
-            <summary>
-            Asynchronously loads content from specified uri.
-            </summary>
-            <param name="uri">The content uri.</param>
-            <param name="cancellationToken">The token used to cancel the load content task.</param>
-            <returns>The loaded content.</returns>
-        </member>
         <member name="M:SIF.WPF.Styles.Windows.DefaultContentLoader.LoadContentAsync(System.Uri,System.Threading.CancellationToken)">
             <summary>
             Asynchronously loads content from specified uri.
@@ -2503,36 +2587,10 @@
             The default link navigator with support for loading frame content, external link navigation using the default browser and command execution.
             </summary>
         </member>
-        <member name="T:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator">
-            <summary>
-            The hyperlink navigator contract.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator.Navigate(System.Uri,System.Windows.FrameworkElement,System.String)">
-            <summary>
-            Performs navigation to specified link.
-            </summary>
-            <param name="uri">The uri to navigate to.</param>
-            <param name="source">The source element that triggers the navigation. Required for frame navigation.</param>
-            <param name="parameter">An optional command parameter or navigation target.</param>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator.Commands">
-            <summary>
-            Gets or sets the navigable commands.
-            </summary>
-        </member>
         <member name="M:SIF.WPF.Styles.Windows.Navigation.DefaultLinkNavigator.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Navigation.DefaultLinkNavigator"/> class.
             </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Navigation.DefaultLinkNavigator.Navigate(System.Uri,System.Windows.FrameworkElement,System.String)">
-            <summary>
-            Performs navigation to specified link.
-            </summary>
-            <param name="uri">The uri to navigate to.</param>
-            <param name="source">The source element that triggers the navigation. Required for frame navigation.</param>
-            <param name="parameter">An optional command parameter or navigation target.</param>
         </member>
         <member name="P:SIF.WPF.Styles.Windows.Navigation.DefaultLinkNavigator.ExternalSchemes">
             <summary>
@@ -2547,6 +2605,14 @@
             Gets or sets the navigable commands.
             </summary>
         </member>
+        <member name="M:SIF.WPF.Styles.Windows.Navigation.DefaultLinkNavigator.Navigate(System.Uri,System.Windows.FrameworkElement,System.String)">
+            <summary>
+            Performs navigation to specified link.
+            </summary>
+            <param name="uri">The uri to navigate to.</param>
+            <param name="source">The source element that triggers the navigation. Required for frame navigation.</param>
+            <param name="parameter">An optional command parameter or navigation target.</param>
+        </member>
         <member name="T:SIF.WPF.Styles.Windows.Navigation.FragmentNavigationEventArgs">
             <summary>
             Provides data for fragment navigation events.
@@ -2557,206 +2623,27 @@
             Gets the uniform resource identifier (URI) fragment.
             </summary>
         </member>
-        <member name="T:SIF.WPF.Styles.Windows.IContent">
+        <member name="T:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator">
             <summary>
-            Defines the optional contract for content loaded in a ModernFrame.
+            The hyperlink navigator contract.
             </summary>
         </member>
-        <member name="M:SIF.WPF.Styles.Windows.IContent.OnFragmentNavigation(SIF.WPF.Styles.Windows.Navigation.FragmentNavigationEventArgs)">
+        <member name="P:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator.Commands">
             <summary>
-            Called when navigation to a content fragment begins.
-            </summary>
-            <param name="e">An object that contains the navigation data.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatedFrom(SIF.WPF.Styles.Windows.Navigation.NavigationEventArgs)">
-            <summary>
-            Called when this instance is no longer the active content in a frame.
-            </summary>
-            <param name="e">An object that contains the navigation data.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatedTo(SIF.WPF.Styles.Windows.Navigation.NavigationEventArgs)">
-            <summary>
-            Called when a this instance becomes the active content in a frame.
-            </summary>
-            <param name="e">An object that contains the navigation data.</param>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatingFrom(SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs)">
-            <summary>
-            Called just before this instance is no longer the active content in a frame.
-            </summary>
-            <param name="e">An object that contains the navigation data.</param>
-            <remarks>The method is also invoked when parent frames are about to navigate.</remarks>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx">
-            <summary>
-            Provides addition visual tree helper methods.
+            Gets or sets the navigable commands.
             </summary>
         </member>
-        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.TryGetVisualStateGroup(System.Windows.DependencyObject,System.String)">
+        <member name="M:SIF.WPF.Styles.Windows.Navigation.ILinkNavigator.Navigate(System.Uri,System.Windows.FrameworkElement,System.String)">
             <summary>
-            Gets specified visual state group.
+            Performs navigation to specified link.
             </summary>
-            <param name="dependencyObject">The dependency object.</param>
-            <param name="groupName">Name of the group.</param>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.GetImplementationRoot(System.Windows.DependencyObject)">
-            <summary>
-            Gets the implementation root.
-            </summary>
-            <param name="dependencyObject">The dependency object.</param>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.Ancestors(System.Windows.DependencyObject)">
-            <summary>
-            Returns a collection of the visual ancestor elements of specified dependency object.
-            </summary>
-            <param name="dependencyObject">The dependency object.</param>
-            <returns>
-            A collection that contains the ancestors elements.
-            </returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.AncestorsAndSelf(System.Windows.DependencyObject)">
-            <summary>
-            Returns a collection of visual elements that contain specified object, and the ancestors of specified object.
-            </summary>
-            <param name="dependencyObject">The dependency object.</param>
-            <returns>
-            A collection that contains the ancestors elements and the object itself.
-            </returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.GetParent(System.Windows.DependencyObject)">
-            <summary>
-            Gets the parent for specified dependency object.
-            </summary>
-            <param name="dependencyObject">The dependency object</param>
-            <returns>The parent object or null if there is no parent.</returns>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Controls.ModernFrame">
-            <summary>
-            A simple content frame implementation with navigation support.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepAliveProperty">
-            <summary>
-            Identifies the KeepAlive attached dependency property.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepContentAliveProperty">
-            <summary>
-            Identifies the KeepContentAlive dependency property.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.ContentLoaderProperty">
-            <summary>
-            Identifies the ContentLoader dependency property.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.IsLoadingContentProperty">
-            <summary>
-            Identifies the IsLoadingContent dependency property.
-            </summary>
-        </member>
-        <member name="F:SIF.WPF.Styles.Windows.Controls.ModernFrame.SourceProperty">
-            <summary>
-            Identifies the Source dependency property.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:SIF.WPF.Styles.Windows.Controls.ModernFrame"/> class.
-            </summary>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.HandleRoutedEvent(System.Windows.Input.CanExecuteRoutedEventArgs)">
-            <summary>
-            Determines whether the routed event args should be handled.
-            </summary>
-            <param name="args"></param>
-            <returns></returns>
-            <remarks>This method prevents parent frames from handling routed commands.</remarks>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.ShouldKeepContentAlive(System.Object)">
-            <summary>
-            Determines whether the specified content should be kept alive.
-            </summary>
-            <param name="content"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.GetKeepAlive(System.Windows.DependencyObject)">
-            <summary>
-            Gets a value indicating whether to keep specified object alive in a ModernFrame instance.
-            </summary>
-            <param name="o">The target dependency object.</param>
-            <returns>Whether to keep the object alive. Null to leave the decision to the ModernFrame.</returns>
-        </member>
-        <member name="M:SIF.WPF.Styles.Windows.Controls.ModernFrame.SetKeepAlive(System.Windows.DependencyObject,System.Nullable{System.Boolean})">
-            <summary>
-            Sets a value indicating whether to keep specified object alive in a ModernFrame instance.
-            </summary>
-            <param name="o">The target dependency object.</param>
-            <param name="value">Whether to keep the object alive. Null to leave the decision to the ModernFrame.</param>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.FragmentNavigation">
-            <summary>
-            Occurs when navigation to a content fragment begins.
-            </summary>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigating">
-            <summary>
-            Occurs when a new navigation is requested.
-            </summary>
-            <remarks>
-            The navigating event is also raised when a parent frame is navigating. This allows for cancelling parent navigation.
-            </remarks>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigated">
-            <summary>
-            Occurs when navigation to new content has completed.
-            </summary>
-        </member>
-        <member name="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.NavigationFailed">
-            <summary>
-            Occurs when navigation has failed.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.KeepContentAlive">
-            <summary>
-            Gets or sets a value whether content should be kept in memory.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.ContentLoader">
-            <summary>
-            Gets or sets the content loader.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.IsLoadingContent">
-            <summary>
-            Gets a value indicating whether this instance is currently loading content.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Controls.ModernFrame.Source">
-            <summary>
-            Gets or sets the source of the current content.
-            </summary>
+            <param name="uri">The uri to navigate to.</param>
+            <param name="source">The source element that triggers the navigation. Required for frame navigation.</param>
+            <param name="parameter">An optional command parameter or navigation target.</param>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs">
             <summary>
-            Provides data for the <see cref="M:SIF.WPF.Styles.Windows.IContent.OnNavigatingFrom(SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs)"/> method and the <see cref="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigating"/> event.
-            </summary>
-        </member>
-        <member name="T:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs">
-            <summary>
-            Defines the base navigation event arguments.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs.Frame">
-            <summary>
-            Gets the frame that raised this event.
-            </summary>
-        </member>
-        <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs.Source">
-            <summary>
-            Gets the source uri for the target being navigated to.
+            Provides data for the <see cref="M:SIF.WPF.Styles.Windows.IContent.OnNavigatingFrom(SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs)" /> method and the <see cref="E:SIF.WPF.Styles.Windows.Controls.ModernFrame.Navigating"/> event.
             </summary>
         </member>
         <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs.IsParentFrameNavigating">
@@ -2772,6 +2659,21 @@
         <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs.Cancel">
             <summary>
             Gets or sets a value indicating whether the event should be canceled.
+            </summary>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs">
+            <summary>
+            Defines the base navigation event arguments.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs.Frame">
+            <summary>
+            Gets the frame that raised this event.
+            </summary>
+        </member>
+        <member name="P:SIF.WPF.Styles.Windows.Navigation.NavigationBaseEventArgs.Source">
+            <summary>
+            Gets the source uri for the target being navigated to.
             </summary>
         </member>
         <member name="T:SIF.WPF.Styles.Windows.Navigation.LinkCommands">
@@ -2905,6 +2807,134 @@
         <member name="F:SIF.WPF.Styles.Windows.Navigation.NavigationType.Refresh">
             <summary>
             Reloading the current content.
+            </summary>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.IContent">
+            <summary>
+            Defines the optional contract for content loaded in a ModernFrame.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.IContent.OnFragmentNavigation(SIF.WPF.Styles.Windows.Navigation.FragmentNavigationEventArgs)">
+            <summary>
+            Called when navigation to a content fragment begins.
+            </summary>
+            <param name="e">An object that contains the navigation data.</param>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatedFrom(SIF.WPF.Styles.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Called when this instance is no longer the active content in a frame.
+            </summary>
+            <param name="e">An object that contains the navigation data.</param>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatedTo(SIF.WPF.Styles.Windows.Navigation.NavigationEventArgs)">
+            <summary>
+            Called when a this instance becomes the active content in a frame.
+            </summary>
+            <param name="e">An object that contains the navigation data.</param>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.IContent.OnNavigatingFrom(SIF.WPF.Styles.Windows.Navigation.NavigatingCancelEventArgs)">
+            <summary>
+            Called just before this instance is no longer the active content in a frame.
+            </summary>
+            <param name="e">An object that contains the navigation data.</param>
+            <remarks>The method is also invoked when parent frames are about to navigate.</remarks>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.IContentLoader">
+            <summary>
+            The contract for loading content.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.IContentLoader.LoadContentAsync(System.Uri,System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously loads content from specified uri.
+            </summary>
+            <param name="uri">The content uri.</param>
+            <param name="cancellationToken">The token used to cancel the load content task.</param>
+            <returns>The loaded content.</returns>
+        </member>
+        <member name="T:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx">
+            <summary>
+            Provides addition visual tree helper methods.
+            </summary>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.TryGetVisualStateGroup(System.Windows.DependencyObject,System.String)">
+            <summary>
+            Gets specified visual state group.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <param name="groupName">Name of the group.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.GetImplementationRoot(System.Windows.DependencyObject)">
+            <summary>
+            Gets the implementation root.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.Ancestors(System.Windows.DependencyObject)">
+            <summary>
+            Returns a collection of the visual ancestor elements of specified dependency object.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <returns>
+            A collection that contains the ancestors elements.
+            </returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.AncestorsAndSelf(System.Windows.DependencyObject)">
+            <summary>
+            Returns a collection of visual elements that contain specified object, and the ancestors of specified object.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <returns>
+            A collection that contains the ancestors elements and the object itself.
+            </returns>
+        </member>
+        <member name="M:SIF.WPF.Styles.Windows.Media.VisualTreeHelperEx.GetParent(System.Windows.DependencyObject)">
+            <summary>
+            Gets the parent for specified dependency object.
+            </summary>
+            <param name="dependencyObject">The dependency object</param>
+            <returns>The parent object or null if there is no parent.</returns>
+        </member>
+        <member name="T:System.Windows.MessageType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:System.Windows.MessageType.Error">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
             </summary>
         </member>
     </members>

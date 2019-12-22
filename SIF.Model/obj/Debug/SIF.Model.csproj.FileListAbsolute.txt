@@ -12,3 +12,10 @@ E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.Properties.Resources
 E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.dll
 E:\OneDrive\Programação\SIF\SIF.Model\obj\Debug\SIF.Model.pdb
+C:\projects\sif_financeiro\SIF.Model\bin\Debug\SIF.Model.dll
+C:\projects\sif_financeiro\SIF.Model\bin\Debug\SIF.Model.pdb
+C:\projects\sif_financeiro\SIF.Model\obj\Debug\SIF.Model.Properties.Resources.resources
+C:\projects\sif_financeiro\SIF.Model\obj\Debug\SIF.Model.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\SIF.Model\obj\Debug\SIF.Model.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\SIF.Model\obj\Debug\SIF.Model.dll
+C:\projects\sif_financeiro\SIF.Model\obj\Debug\SIF.Model.pdb

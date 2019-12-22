@@ -43,132 +43,146 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Data.Schema.ScriptDom" version="11.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Data.Schema.ScriptDom.Sql" version="11.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EditorSQL.dll" size="25088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EditorSQL.dll" size="24576">
       <assemblyIdentity name="EditorSQL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>NeKleKw0aqs2b/yhatu5fnP0bMgUy7HL/TaguYKaPtM=</dsig:DigestValue>
+        <dsig:DigestValue>6qL1c/0IiEbia1NOZ5Syvw1gIhpmn6zcw31D9xICa2c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Notification.dll" size="66048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Data.Schema.ScriptDom.dll" size="24104">
+      <assemblyIdentity name="Microsoft.Data.Schema.ScriptDom" version="11.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aVXQ6cve4PrrWo+Tx2vR/eQufG15hj3jiSqiJAI28AU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Data.Schema.ScriptDom.Sql.dll" size="2189368">
+      <assemblyIdentity name="Microsoft.Data.Schema.ScriptDom.Sql" version="11.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vr7+P1fsCvShBuxKewMNiUQ79PElb4b12MYUZAuSbfQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Notification.dll" size="65536">
       <assemblyIdentity name="Notification" version="2.3.2.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q7xS7nCem2W3Wn3Sc6BLstlMrdYcvN6wG6ACygXFMMo=</dsig:DigestValue>
+        <dsig:DigestValue>51zAv06DA8m+2yiEZeN4x+So0Vi2nqeIfG4Xu1voUY4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF - Sistema Financeiro.exe" size="1351168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF - Sistema Financeiro.exe" size="1343488">
       <assemblyIdentity name="SIF - Sistema Financeiro" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pIMR7kqatkwovu4wEhNAjXKVaIASGvzES6BU9hwmrmk=</dsig:DigestValue>
+        <dsig:DigestValue>cEIYieGEsGiAwUkakECR53mmssgiiat2g948yddhp00=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Commom.dll" size="57856">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Commom.dll" size="56832">
       <assemblyIdentity name="SIF.Commom" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2mJC2MYV16V5meiyUI22LgDr5bRw9OYmmEsPjMR544s=</dsig:DigestValue>
+        <dsig:DigestValue>CS4+790w71Iaxu0lNDk4HaQz28iLJyHAwZy9saOH7DA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Dao.dll" size="41472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Dao.dll" size="39936">
       <assemblyIdentity name="SIF.Dao" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WBnMmdT8O9hKkZI1f6/XjMcjAJ4SM7PnfghdQNzBcLw=</dsig:DigestValue>
+        <dsig:DigestValue>+gWcvnkJEPlIkdXciKqquzg5s1NcYiZbd8KCMf2vxhU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Model.dll" size="43008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Model.dll" size="39936">
       <assemblyIdentity name="SIF.Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qdamnQX9jFYFYJsMg/y+iQbucZBc/qgh3sSP93UAzds=</dsig:DigestValue>
+        <dsig:DigestValue>dROTAhUiqz5ff3uXbmUpVjqYZ1x+7q3Y8oMietOHqA0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Pesquisa.dll" size="42496">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.Pesquisa.dll" size="40448">
       <assemblyIdentity name="SIF.Pesquisa" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1gJgDJXTUt967MFvbf57mgYW54d/WU/5rb4M6Uwmg+A=</dsig:DigestValue>
+        <dsig:DigestValue>pw8BrWmF2EXuFL8OmXVPgmQ6Y+8XbPIBjyRdjfskiAo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.PesquisaView.dll" size="37376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.PesquisaView.dll" size="36352">
       <assemblyIdentity name="SIF.PesquisaView" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0D0vV3SBNrwFLmxgSWa73j/VxwVzk5eS49MTvadX9k0=</dsig:DigestValue>
+        <dsig:DigestValue>MMvVYY4CbMX04/iXBoVK4hTbf0MK90zZAUYprKoc7Vg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.PesquisaViewSP.dll" size="38912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.PesquisaViewSP.dll" size="37888">
       <assemblyIdentity name="SIF.PesquisaViewSP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eEDtgBW5/0c7VTmXSZzNEBaabcFpv9Tu4vxaPzWEN3Q=</dsig:DigestValue>
+        <dsig:DigestValue>kBiaEqJZ9H/t8AiSZxFFeUK1OzJ1+tml0L8zQ+iM65s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.WPF.Styles.dll" size="323584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SIF.WPF.Styles.dll" size="318976">
       <assemblyIdentity name="SIF.WPF.Styles" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0Tdg8qibXtq9PhM5FZwzgqpGp6Qkrv3dlgQjvZD6S6w=</dsig:DigestValue>
+        <dsig:DigestValue>HGc0cRcVO1zbGYWrYNPyOBcwjMKh2BhiHhnYo0wCzHI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

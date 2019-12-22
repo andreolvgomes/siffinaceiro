@@ -3,7 +3,7 @@
   <DEFINICOES>
     <Armazenamento>ARMAZENAMENTO_BANCO_DE_DADOS</Armazenamento>
     <SQLServer>
-      <Instancia>.</Instancia>
+      <Instancia>DESKTOP-LIF7QU6\SQLEXPRESS</Instancia>
       <Autenticacao>false</Autenticacao>
       <UsuarioSql></UsuarioSql>
       <SenhaSql></SenhaSql>

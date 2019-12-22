@@ -28,3 +28,15 @@ E:\OneDrive\Programação\SIF\SIF.Commom\obj\Debug\SIF.Commom.Properties.Resourc
 E:\OneDrive\Programação\SIF\SIF.Commom\obj\Debug\SIF.Commom.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\SIF.Commom\obj\Debug\SIF.Commom.dll
 E:\OneDrive\Programação\SIF\SIF.Commom\obj\Debug\SIF.Commom.pdb
+C:\projects\sif_financeiro\SIF.Commom\bin\Debug\SIF.Commom.dll
+C:\projects\sif_financeiro\SIF.Commom\bin\Debug\SIF.Commom.pdb
+C:\projects\sif_financeiro\SIF.Commom\bin\Debug\SIF.Model.dll
+C:\projects\sif_financeiro\SIF.Commom\bin\Debug\SIF.Model.pdb
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.csprojAssemblyReference.cache
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.g.resources
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.Properties.Resources.resources
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.csproj.CopyComplete
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.dll
+C:\projects\sif_financeiro\SIF.Commom\obj\Debug\SIF.Commom.pdb

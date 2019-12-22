@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogErros>
+  <Error>
+    <DataHora>Data: 21/12/2019 Hora: 10:58:00</DataHora>
+    <mscorlib>
+      <Message>Método não-estático requer um destino.</Message>
+      <TargetSite>Void CheckConsistency(System.Object)</TargetSite>
+      <StackTrace>   em System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   em System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   em System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   em System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   em System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   em SIF.Dao.CreateCommandsSql2`1.GetValueModel(PropertyInfo propertyInfo, IModelProperty model) na C:\projects\sif_financeiro\SIF.Dao\CreateCommandsSql2.cs:linha 289
+   em SIF.Dao.CreateCommandsSql2`1.AddParametersDelete(SqlCommand command, IModelProperty model) na C:\projects\sif_financeiro\SIF.Dao\CreateCommandsSql2.cs:linha 278
+   em SIF.Dao.ContextoDbDAO`1.Delete(T model) na C:\projects\sif_financeiro\SIF.Dao\Abstracts\ContextoDbDAO.cs:linha 145
+   em SIF.Aplicacao.Providers.ProviderBaixasContas.ProcessoExclusaoBaixa(Crbaixas model) na C:\projects\sif_financeiro\SIF.Aplicacao\Providers\ProviderBaixasContas.cs:linha 135
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.OnEvent_ExecutandoDeleteEventHandler(T model) na C:\projects\sif_financeiro\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 306
+   em SIF.Aplicacao.ProviderInterfacesCadastros2`1.Control_Buttons(ButtonType button) na C:\projects\sif_financeiro\SIF.Aplicacao\Providers\ProviderInterfacesCadastros2.cs:linha 196</StackTrace>
+    </mscorlib>
+  </Error>
+</LogErros>

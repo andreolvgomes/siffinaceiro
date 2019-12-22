@@ -25,3 +25,14 @@ E:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Properties.Resources.resourc
 E:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.dll
 E:\OneDrive\Programação\SIF\SIF.Dao\obj\Debug\SIF.Dao.pdb
+C:\projects\sif_financeiro\SIF.Dao\bin\Debug\SIF.Dao.dll
+C:\projects\sif_financeiro\SIF.Dao\bin\Debug\SIF.Dao.pdb
+C:\projects\sif_financeiro\SIF.Dao\bin\Debug\SIF.Model.dll
+C:\projects\sif_financeiro\SIF.Dao\bin\Debug\SIF.Model.pdb
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.csprojAssemblyReference.cache
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Properties.Resources.resources
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.csproj.CopyComplete
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.dll
+C:\projects\sif_financeiro\SIF.Dao\obj\Debug\SIF.Dao.pdb

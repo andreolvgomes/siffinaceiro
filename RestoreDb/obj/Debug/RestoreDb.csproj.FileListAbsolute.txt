@@ -24,3 +24,17 @@ E:\OneDrive\Programação\SIF\RestoreDb\obj\Debug\RestoreDb.Properties.Resources
 E:\OneDrive\Programação\SIF\RestoreDb\obj\Debug\RestoreDb.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\RestoreDb\obj\Debug\RestoreDb.exe
 E:\OneDrive\Programação\SIF\RestoreDb\obj\Debug\RestoreDb.pdb
+C:\projects\sif_financeiro\RestoreDb\bin\Debug\RestoreDb.exe.config
+C:\projects\sif_financeiro\RestoreDb\bin\Debug\RestoreDb.exe
+C:\projects\sif_financeiro\RestoreDb\bin\Debug\RestoreDb.pdb
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.csprojAssemblyReference.cache
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\MainWindow.baml
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\MainWindow.g.cs
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\App.g.cs
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb_MarkupCompile.cache
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.g.resources
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.Properties.Resources.resources
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.exe
+C:\projects\sif_financeiro\RestoreDb\obj\Debug\RestoreDb.pdb

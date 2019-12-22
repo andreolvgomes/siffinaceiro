@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SIF - Sistema Financeiro.exe.manifest" size="10427">
+    <dependentAssembly dependencyType="install" codebase="SIF - Sistema Financeiro.exe.manifest" size="11245">
       <assemblyIdentity name="SIF - Sistema Financeiro.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>10jcZcNEwEbOXByipiAxi0k9cVtr+A9jCCag0NBmUW0=</dsig:DigestValue>
+        <dsig:DigestValue>omogPyvZjYQ03sm+QA80D24irTMwsOQbaqWfPdhb/7M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

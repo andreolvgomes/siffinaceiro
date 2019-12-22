@@ -19,3 +19,11 @@ E:\OneDrive\Programação\SIF\EditorSQL\obj\Debug\EditorSQL.Properties.Resources
 E:\OneDrive\Programação\SIF\EditorSQL\obj\Debug\EditorSQL.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\EditorSQL\obj\Debug\EditorSQL.dll
 E:\OneDrive\Programação\SIF\EditorSQL\obj\Debug\EditorSQL.pdb
+C:\projects\sif_financeiro\EditorSQL\bin\Debug\EditorSQL.dll
+C:\projects\sif_financeiro\EditorSQL\bin\Debug\EditorSQL.pdb
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.csprojAssemblyReference.cache
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.Properties.Resources.resources
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.dll
+C:\projects\sif_financeiro\EditorSQL\obj\Debug\EditorSQL.pdb

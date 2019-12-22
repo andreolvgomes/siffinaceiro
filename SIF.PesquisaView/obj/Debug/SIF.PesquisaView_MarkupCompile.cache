@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\OneDrive\Programação\SIF\SIF.PesquisaView\obj\Debug\
+C:\projects\sif_financeiro\SIF.PesquisaView\obj\Debug\
 SIF.PesquisaView
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 4-1651243520
 
-16-939287447
-141552681825
+12-2014540937
+14-1030252098
 DataGridControl\DataGridView.xaml;DataGridControl\TextBoxFilter.xaml;PesquisaWindow.xaml;ViewScript.xaml;
 
-True
+False
 

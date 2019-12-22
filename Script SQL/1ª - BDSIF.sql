@@ -1,7 +1,7 @@
-CREATE DATABASE BDSIF
+CREATE DATABASE bdsif
 GO
 
-USE BDSIF
+USE bdsif
 GO
 
 CREATE TABLE Clientes
@@ -41,7 +41,8 @@ CREATE TABLE Caixas
 	Cai_descricao	VARCHAR(30)		DEFAULT	'' NOT NULL,
 	Cai_observacao	VARCHAR(200)		DEFAULT '' NOT NULL,
 	Cai_saldo		DECIMAL(10,2)	DEFAULT 0 NOT NULL,
-	Cai_movdomes	BIT DEFAULT(0) NOT NULL
+	Cai_movdomes	BIT DEFAULT(0) NOT NULL,
+	Sis_sequencialdb INT IDENTITY(1, 1)	
 CONSTRAINT PK_Caixas PRIMARY KEY (Cai_codigo)
 )
 GO
@@ -50,6 +51,7 @@ CREATE TABLE Planocontas
 (
 	Pla_numeroconta		VARCHAR(20)	DEFAULT '' NOT NULL,
 	Pla_descricao	VARCHAR(50) DEFAULT '' NOT NULL,
+	Sis_sequencialdb INT IDENTITY(1, 1)
 
 CONSTRAINT PK_Planocontas PRIMARY KEY (Pla_numeroconta)
 )
@@ -59,7 +61,8 @@ CREATE TABLE Fpagamentos
 (
 	Fpa_codigo		VARCHAR(2)	DEFAULT '' NOT NULL,
 	Fpa_descricao	VARCHAR(30)	DEFAULT '' NOT NULL,
-	Fpa_observacao	VARCHAR(200)	DEFAULT '' NOT NULL
+	Fpa_observacao	VARCHAR(200)	DEFAULT '' NOT NULL,
+	Sis_sequencialdb INT IDENTITY(1, 1)
 	
 CONSTRAINT PK_Fpagamentos PRIMARY KEY (Fpa_codigo)
 )
@@ -171,7 +174,8 @@ GO
 CREATE TABLE Ussecao
 (
 	Uss_descricao	VARCHAR(50)		NOT NULL,
-	Usm_sequencial	INT NOT NULL
+	Usm_sequencial	INT NOT NULL,
+	Sis_sequencialdb INT IDENTITY(1, 1)
 
 CONSTRAINT PK_Ussecao PRIMARY KEY (Uss_descricao),
 CONSTRAINT FK_Ussecao_Usmenu FOREIGN KEY (Usm_sequencial) REFERENCES Usmenu(Usm_sequencial)
@@ -186,6 +190,7 @@ CREATE TABLE Uscontrolesecao
 	Usc_incluir		BIT	DEFAULT 0		NOT NULL,
 	Usc_excluir		BIT DEFAULT 0		NOT NULL,
 	Usc_editar		BIT DEFAULT 0		NOT NULL,
+	Sis_sequencialdb INT IDENTITY(1, 1)
 	
 CONSTRAINT PK_Uscontrolesecao PRIMARY KEY (Usu_codigo, Uss_descricao),
 CONSTRAINT FK_Uscontrolesecao_Usuarios FOREIGN KEY (Usu_codigo) REFERENCES Usuarios(Usu_codigo),
@@ -204,13 +209,5 @@ CREATE TABLE Faturamentos(
 	
 CONSTRAINT PK_Fat_sequencial PRIMARY KEY (Fat_sequencial)
 ,CONSTRAINT FK_Faturamentos_Clientes FOREIGN KEY (Cli_codigo) REFERENCES Clientes(Cli_codigo)
-)
-GO
-
-CREATE TABLE Sistema(
-	Sis_visualizar_cr INT DEFAULT(0) NOT NULL
-	,Sis_visualizar_cp INT DEFAULT(0) NOT NULL
-	,Sis_cor_sistema	VARCHAR(10) DEFAULT('#FF00ABA9') NOT NULL
-	,Sis_cli_codigo_padrao	INT DEFAULT(0) NOT NULL
 )
 GO

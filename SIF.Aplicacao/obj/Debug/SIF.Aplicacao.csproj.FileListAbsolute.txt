@@ -269,3 +269,141 @@ E:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.Properties.R
 E:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csproj.GenerateResource.Cache
 E:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe.manifest
 E:\OneDrive\Programação\SIF\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.application
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe.config
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe.manifest
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.application
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.exe
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF - Sistema Financeiro.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\Notification.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Commom.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Dao.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Model.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Pesquisa.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.PesquisaView.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.PesquisaViewSP.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\EditorSQL.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\Microsoft.Data.Schema.ScriptDom.Sql.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\Microsoft.Data.Schema.ScriptDom.dll
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\Notification.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.PesquisaViewSP.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.WPF.Styles.xml
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Commom.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Dao.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Model.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.PesquisaView.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\SIF.Pesquisa.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\bin\Debug\EditorSQL.pdb
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csprojAssemblyReference.cache
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Menu.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.BingImage.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.HelloKitty.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.Love.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Fundo\ModernUI.Snowflakes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\HelpJanela.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\Configuracoes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Comprovantes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Faturamento.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\ConfigDatabase.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaFull.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\GeradorParcela.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\ImageIcon.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutInicio.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainelMenu.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AparenciaOps.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Login.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Msg.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Splash.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Styles\GroupBoxStyle.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Styles\IUStyles.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Styles\RadioButtonStyle.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Styles\StylesDictionary.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Styles\TextBlockStyle.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\Buttons.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\CadastroImageLogo.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\LinhaCupom.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\Separador.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\App.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\Navigate.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoISGBD.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoEscolhaArmazenamento.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoFinalizacao.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassosUsuarioSenha.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\FrenteCaixa\CupomFiscal.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Menu.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\HelpJanela.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\InstanciaSQL.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroCaixas.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroClientes.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroProdutos.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\ControlesSistema.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\Configuracoes.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Comprovantes.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Faturamento.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AlteracaoSenha.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\BancoBackup.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\CadastroUsuario.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\ConfigDatabase.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\UsuarioPermissoes.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaContas.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaFull.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Contasrp.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\GeradorParcela.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainel.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\ImageIcon.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutCadastros.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutFinanceiro.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutInicio.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutMovimentacoes.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainelMenu.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AparenciaOps.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Login.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Msg.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Splash.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\Buttons.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\CadastroImageLogo.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\LinhaCupom.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\UserControls\Separador.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\App.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro_MarkupCompile.cache
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro_MarkupCompile.lref
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\Navigate.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\UserControlPassos\PassoConfiguracaoArquivoBanco.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\FrenteCaixa\CupomFiscal.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\ConfiguracaoInstanciaSQL\InstanciaSQL.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroCaixas.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroClientes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroFormaPgto.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroPlanoContas.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutCadastroW\CadastroProdutos.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutConfiguracoesW\ControlesSistema.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\AlteracaoSenha.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\BancoBackup.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\CadastroUsuario.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutPainelW\UsuarioPermissoes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\BaixaContas.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutFinanceiroW\Contasrp.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\LayoutWindows\LayoutMovimentacaoW\MovimentacaoFinan.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutPainel.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutCadastros.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutFinanceiro.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\Layouts\LayoutMovimentacoes.baml
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.g.resources
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.Properties.Resources.resources
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csproj.GenerateResource.cache
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csproj.CoreCompileInputs.cache
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe.manifest
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.application
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF.Aplicacao.csproj.CopyComplete
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.exe
+C:\projects\sif_financeiro\SIF.Aplicacao\obj\Debug\SIF - Sistema Financeiro.pdb
